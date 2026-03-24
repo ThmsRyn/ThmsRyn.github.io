@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atelier Mane — Salon de coiffure à Paris 9e</title>
+  <meta name="description" content="Atelier Mane, salon de coiffure artisanal au coeur du 9e arrondissement de Paris. Coupe, coloration, soins et coiffure événementielle. Sur rendez-vous." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip link accessibilité -->
+  <a href="#contenu-principal" class="skip-link">Aller au contenu principal</a>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="Atelier Mane — Retour en haut">
+        <span class="nav__logo-text">Atelier Mane</span>
+      </a>
+
+      <button class="nav__burger" id="burger" aria-controls="nav-mobile" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="nav__burger-bar"></span>
+        <span class="nav__burger-bar"></span>
+        <span class="nav__burger-bar"></span>
+      </button>
+
+      <ul class="nav__links" role="list" aria-label="Liens principaux">
+        <li><a href="#apropos" class="nav__link">À propos</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#galerie" class="nav__link">Galerie</a></li>
+        <li><a href="#temoignages" class="nav__link">Avis</a></li>
+        <li><a href="#tarifs" class="nav__link">Tarifs</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Rendez-vous</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Menu mobile -->
+  <dialog class="nav-mobile" id="nav-mobile" aria-label="Menu mobile">
+    <button class="nav-mobile__close" id="nav-mobile-close" aria-label="Fermer le menu">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <ul class="nav-mobile__links" role="list">
+      <li><a href="#apropos" class="nav-mobile__link">À propos</a></li>
+      <li><a href="#services" class="nav-mobile__link">Services</a></li>
+      <li><a href="#galerie" class="nav-mobile__link">Galerie</a></li>
+      <li><a href="#temoignages" class="nav-mobile__link">Avis clients</a></li>
+      <li><a href="#tarifs" class="nav-mobile__link">Tarifs</a></li>
+      <li><a href="#contact" class="nav-mobile__link nav-mobile__link--cta">Prendre rendez-vous</a></li>
+    </ul>
+  </dialog>
+
+  <main id="contenu-principal">
+
+    <!-- ======================================================
+         SECTION 1 — HERO
+    ====================================================== -->
+    <section class="hero" id="hero" aria-label="Présentation du salon">
+      <img src="hero-salon.jpg" alt="Intérieur chaleureux du salon Atelier Mane" class="hero__visual" loading="eager" fetchpriority="high" />
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal-hero">Salon de coiffure artisanal · Paris 9e</p>
+        <h1 class="hero__title reveal-hero reveal-hero--delay-1">
+          L'art de sublimer<br />
+          <em>chaque chevelure</em>
+        </h1>
+        <p class="hero__tagline reveal-hero reveal-hero--delay-2">
+          Un espace chaleureux où chaque coupe est une conversation, chaque couleur un portrait.
+        </p>
+        <a href="#contact" class="btn btn--primary reveal-hero reveal-hero--delay-3">
+          Prendre rendez-vous
+        </a>
+      </div>
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- Séparateur décoratif -->
+    <div class="separator" aria-hidden="true">
+      <span class="separator__ornament"></span>
+    </div>
+
+    <!-- ======================================================
+         SECTION 2 — À PROPOS
+    ====================================================== -->
+    <section class="apropos" id="apropos" aria-labelledby="apropos-titre">
+      <div class="container">
+        <div class="apropos__grid">
+
+          <div class="apropos__visual-wrap">
+            <div class="apropos__photo reveal">
+              <img src="portrait-coiffeuse.jpg" alt="Portrait de Camille Tessier, fondatrice d'Atelier Mane" class="apropos__photo-inner" loading="lazy" />
+            </div>
+            <div class="apropos__badge reveal reveal--delay-1" aria-hidden="true">
+              <span class="apropos__badge-number">12</span>
+              <span class="apropos__badge-label">ans d'expérience</span>
+            </div>
+          </div>
+
+          <div class="apropos__content reveal reveal--delay-2">
+            <p class="section-eyebrow">Notre histoire</p>
+            <h2 class="section-title" id="apropos-titre">Un atelier né<br /><em>de la passion</em></h2>
+            <p class="apropos__text">
+              Atelier Mane a ouvert ses portes en 2013, dans une arrière-cour pavée du 9e arrondissement. Camille Tessier, fondatrice et coiffeuse principale, a voulu créer un espace à rebours des salons standardisés : un lieu de soin, de dialogue et d'artisanat.
+            </p>
+            <p class="apropos__text">
+              Chaque prestation commence par une consultation approfondie. Nous prenons le temps de comprendre votre texture, votre rythme de vie, vos désirs. La coiffure est une pratique du soin — pas une transaction.
+            </p>
+            <ul class="apropos__valeurs" role="list" aria-label="Nos valeurs">
+              <li class="apropos__valeur">
+                <span class="apropos__valeur-icon" aria-hidden="true">&#9670;</span>
+                Produits écoresponsables certifiés
+              </li>
+              <li class="apropos__valeur">
+                <span class="apropos__valeur-icon" aria-hidden="true">&#9670;</span>
+                Techniques douces, sans agression
+              </li>
+              <li class="apropos__valeur">
+                <span class="apropos__valeur-icon" aria-hidden="true">&#9670;</span>
+                Consultation incluse dans chaque prestation
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Séparateur décoratif -->
+    <div class="separator" aria-hidden="true">
+      <span class="separator__ornament"></span>
+    </div>
+
+    <!-- ======================================================
+         SECTION 3 — SERVICES
+    ====================================================== -->
+    <section class="services" id="services" aria-labelledby="services-titre">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Ce que nous faisons</p>
+          <h2 class="section-title" id="services-titre">Nos prestations</h2>
+          <p class="section-subtitle">Chaque service est pensé comme un rituel, adapté à vos cheveux et à votre personnalité.</p>
+        </div>
+
+        <ul class="services__grid" role="list">
+
+          <li class="service-card reveal" aria-label="Prestation : Coupe et Style">
+            <div class="service-card__visual service-card__visual--coupe" aria-hidden="true"></div>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Coupe &amp; Style</h3>
+              <p class="service-card__desc">
+                De la coupe structurée au dégradé sculptural, en passant par les coupes courtes graphiques et les longs effilés. Chaque forme est construite pour votre morphologie.
+              </p>
+              <p class="service-card__price" aria-label="À partir de 55 euros">À partir de <strong>55 €</strong></p>
+              <a href="#contact" class="btn btn--outline service-card__cta">Réserver</a>
+            </div>
+          </li>
+
+          <li class="service-card reveal reveal--delay-1" aria-label="Prestation : Coloration">
+            <div class="service-card__visual service-card__visual--coloration" aria-hidden="true"></div>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Coloration</h3>
+              <p class="service-card__desc">
+                Balayage naturel, colorations végétales, mèches lumière ou couleur pleine. Nous travaillons avec des produits sans ammoniaque pour respecter le cuir chevelu.
+              </p>
+              <p class="service-card__price" aria-label="À partir de 85 euros">À partir de <strong>85 €</strong></p>
+              <a href="#contact" class="btn btn--outline service-card__cta">Réserver</a>
+            </div>
+          </li>
+
+          <li class="service-card reveal reveal--delay-2" aria-label="Prestation : Soin et Traitement">
+            <div class="service-card__visual service-card__visual--soin" aria-hidden="true"></div>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Soin &amp; Traitement</h3>
+              <p class="service-card__desc">
+                Masques nourrissants, lissages doux, soins kératine et rituels hydratants pour les cheveux secs, bouclés ou fragilisés. Un moment de récupération pour votre chevelure.
+              </p>
+              <p class="service-card__price" aria-label="À partir de 45 euros">À partir de <strong>45 €</strong></p>
+              <a href="#contact" class="btn btn--outline service-card__cta">Réserver</a>
+            </div>
+          </li>
+
+          <li class="service-card reveal reveal--delay-3" aria-label="Prestation : Coiffure événementielle">
+            <div class="service-card__visual service-card__visual--event" aria-hidden="true"></div>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Coiffure événementielle</h3>
+              <p class="service-card__desc">
+                Mariages, soirées de gala, séances photo. Chignon couture, tresses élaborées, ondulations hollywoodiennes. Disponible en atelier ou à domicile.
+              </p>
+              <p class="service-card__price" aria-label="À partir de 120 euros">À partir de <strong>120 €</strong></p>
+              <a href="#contact" class="btn btn--outline service-card__cta">Réserver</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- Séparateur décoratif -->
+    <div class="separator" aria-hidden="true">
+      <span class="separator__ornament"></span>
+    </div>
+
+    <!-- ======================================================
+         SECTION 4 — GALERIE
+    ====================================================== -->
+    <section class="galerie" id="galerie" aria-labelledby="galerie-titre">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Inspirations</p>
+          <h2 class="section-title" id="galerie-titre">Galerie</h2>
+          <p class="section-subtitle">Un aperçu de l'univers d'Atelier Mane.</p>
+        </div>
+
+        <ul class="galerie__grid" role="list" aria-label="Galerie de réalisations">
+          <li class="galerie__item reveal" aria-label="Réalisation : balayage naturel sur cheveux longs">
+            <div class="galerie__visual galerie__visual--1">
+              <img src="galerie-01.jpg" alt="Balayage naturel doré sur cheveux châtains longs" class="galerie__img" loading="lazy" />
+            </div>
+          </li>
+          <li class="galerie__item galerie__item--tall reveal reveal--delay-1" aria-label="Réalisation : coupe courte structurée">
+            <div class="galerie__visual galerie__visual--2">
+              <img src="galerie-02.jpg" alt="Coupe courte graphique sur cheveux noirs naturels" class="galerie__img" loading="lazy" />
+            </div>
+          </li>
+          <li class="galerie__item reveal reveal--delay-2" aria-label="Réalisation : tresse bohème">
+            <div class="galerie__visual galerie__visual--3">
+              <img src="galerie-03.jpg" alt="Tresse bohème élaborée pour un événement" class="galerie__img" loading="lazy" />
+            </div>
+          </li>
+          <li class="galerie__item reveal reveal--delay-1" aria-label="Réalisation : coloration cuivre">
+            <div class="galerie__visual galerie__visual--4">
+              <img src="galerie-04.jpg" alt="Coloration cuivre chaleureux sur mi-long" class="galerie__img" loading="lazy" />
+            </div>
+          </li>
+          <li class="galerie__item galerie__item--tall reveal reveal--delay-2" aria-label="Réalisation : ondulations naturelles">
+            <div class="galerie__visual galerie__visual--5">
+              <img src="galerie-05.jpg" alt="Mise en forme ondulations naturelles sur cheveux bouclés" class="galerie__img" loading="lazy" />
+            </div>
+          </li>
+          <li class="galerie__item reveal reveal--delay-3" aria-label="Réalisation : chignon mariée">
+            <div class="galerie__visual galerie__visual--6">
+              <img src="galerie-06.jpg" alt="Chignon couture pour mariée, finition romantique" class="galerie__img" loading="lazy" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Séparateur décoratif -->
+    <div class="separator" aria-hidden="true">
+      <span class="separator__ornament"></span>
+    </div>
+
+    <!-- ======================================================
+         SECTION 5 — TÉMOIGNAGES
+    ====================================================== -->
+    <section class="temoignages" id="temoignages" aria-labelledby="temoignages-titre">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Ce qu'elles disent</p>
+          <h2 class="section-title" id="temoignages-titre">Avis clients</h2>
+        </div>
+
+        <ul class="temoignages__grid" role="list">
+
+          <li class="temoignage reveal">
+            <div class="temoignage__etoiles" aria-label="5 étoiles sur 5" role="img">
+              <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <blockquote class="temoignage__texte">
+              <p>Camille a su exactement ce dont j'avais besoin sans que j'aie eu à l'expliquer longuement. Le balayage est d'une finesse absolue. Je ne vais plus nulle part ailleurs.</p>
+            </blockquote>
+            <footer class="temoignage__auteur">
+              <div class="temoignage__avatar" aria-hidden="true"></div>
+              <div>
+                <cite class="temoignage__nom">Sophie M.</cite>
+                <p class="temoignage__date">Novembre 2025</p>
+              </div>
+            </footer>
+          </li>
+
+          <li class="temoignage reveal reveal--delay-1">
+            <div class="temoignage__etoiles" aria-label="5 étoiles sur 5" role="img">
+              <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <blockquote class="temoignage__texte">
+              <p>J'avais peur de couper mes cheveux longs après 10 ans. L'équipe a pris le temps, proposé des alternatives, et le résultat est exactement ce que j'espérais sans oser le dire.</p>
+            </blockquote>
+            <footer class="temoignage__auteur">
+              <div class="temoignage__avatar temoignage__avatar--2" aria-hidden="true"></div>
+              <div>
+                <cite class="temoignage__nom">Inès R.</cite>
+                <p class="temoignage__date">Janvier 2026</p>
+              </div>
+            </footer>
+          </li>
+
+          <li class="temoignage reveal reveal--delay-2">
+            <div class="temoignage__etoiles" aria-label="5 étoiles sur 5" role="img">
+              <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <blockquote class="temoignage__texte">
+              <p>Atelier Mane a coiffé toutes mes demoiselles d'honneur pour mon mariage. Ponctualité parfaite, chignons magnifiques, ambiance détendue. Un grand merci à toute l'équipe.</p>
+            </blockquote>
+            <footer class="temoignage__auteur">
+              <div class="temoignage__avatar temoignage__avatar--3" aria-hidden="true"></div>
+              <div>
+                <cite class="temoignage__nom">Laura B.</cite>
+                <p class="temoignage__date">Septembre 2025</p>
+              </div>
+            </footer>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- Séparateur décoratif -->
+    <div class="separator" aria-hidden="true">
+      <span class="separator__ornament"></span>
+    </div>
+
+    <!-- ======================================================
+         SECTION 6 — TARIFS
+    ====================================================== -->
+    <section class="tarifs" id="tarifs" aria-labelledby="tarifs-titre">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Transparence</p>
+          <h2 class="section-title" id="tarifs-titre">Grille tarifaire</h2>
+          <p class="section-subtitle">Les prix incluent la consultation, le shampoing et le brushing final.</p>
+        </div>
+
+        <div class="tarifs__wrap reveal reveal--delay-1">
+
+          <div class="tarifs__categorie">
+            <h3 class="tarifs__categorie-titre">Coupes</h3>
+            <table class="tarifs__table" aria-label="Tarifs coupes">
+              <tbody>
+                <tr>
+                  <th scope="row" class="tarifs__prestation">Coupe femme cheveux courts</th>
+                  <td class="tarifs__prix">55 €</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tarifs__prestation">Coupe femme mi-long</th>
+                  <td class="tarifs__prix">65 €</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tarifs__prestation">Coupe femme cheveux longs</th>
+                  <td class="tarifs__prix">75 €</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tarifs__prestation">Coupe homme</th>
+                  <td class="tarifs__prix">40 €</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tarifs__prestation">Coupe enfant (moins de 12 ans)</th>
+                  <td class="tarifs__prix">30 €</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tarifs__categorie">
+            <h3 class="tarifs__categorie-titre">Colorations</h3>
+            <table class="tarifs__table" aria-label="Tarifs colorations">
+              <tbody>
+                <tr>
+                  <th scope="row" class="tarifs__prestation">Coloration végétale (roots)</th>
+                  <td class="tarifs__prix">85 €</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tarifs__prestation">Balayage naturel</th>
+                  <td class="tarifs__prix">110 €</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tarifs__prestation">Mèches complètes</th>
+                  <td class="tarifs__prix">130 €</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tarifs__prestation">Couleur pleine + soin</th>
+                  <td class="tarifs__prix">120 €</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tarifs__categorie">
+            <h3 class="tarifs__categorie-titre">Soins &amp; Traitements</h3>
+            <table class="tarifs__table" aria-label="Tarifs soins">
+              <tbody>
+                <tr>
+                  <th scope="row" class="tarifs__prestation">Soin nourrissant (masque)</th>
+                  <td class="tarifs__prix">45 €</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tarifs__prestation">Lissage doux</th>
+                  <td class="tarifs__prix">90 €</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tarifs__prestation">Soin kératine</th>
+                  <td class="tarifs__prix">150 €</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tarifs__categorie">
+            <h3 class="tarifs__categorie-titre">Événementiel</h3>
+            <table class="tarifs__table" aria-label="Tarifs coiffure événementielle">
+              <tbody>
+                <tr>
+                  <th scope="row" class="tarifs__prestation">Chignon couture</th>
+                  <td class="tarifs__prix">120 €</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tarifs__prestation">Tresses élaborées</th>
+                  <td class="tarifs__prix">95 €</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tarifs__prestation">Mise en plis + brushing</th>
+                  <td class="tarifs__prix">70 €</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tarifs__prestation">Forfait mariage (devis)</th>
+                  <td class="tarifs__prix">Sur devis</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+        <p class="tarifs__note reveal reveal--delay-2">
+          Les tarifs sont donnés à titre indicatif. Un devis précis vous est remis lors de la consultation initiale, sans engagement.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Séparateur décoratif -->
+    <div class="separator" aria-hidden="true">
+      <span class="separator__ornament"></span>
+    </div>
+
+    <!-- ======================================================
+         SECTION 7 — CONTACT & RDV
+    ====================================================== -->
+    <section class="contact" id="contact" aria-labelledby="contact-titre">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Nous retrouver</p>
+          <h2 class="section-title" id="contact-titre">Contact &amp; Rendez-vous</h2>
+        </div>
+
+        <div class="contact__grid">
+
+          <!-- Informations pratiques -->
+          <div class="contact__infos reveal">
+
+            <div class="contact__bloc">
+              <h3 class="contact__bloc-titre">Adresse</h3>
+              <address class="contact__adresse">
+                Atelier Mane<br />
+                14 rue Notre-Dame-de-Lorette<br />
+                75009 Paris
+              </address>
+              <a
+                href="https://maps.google.com/?q=14+rue+Notre-Dame-de-Lorette+Paris+75009"
+                class="contact__maps-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Voir sur Google Maps (nouvelle fenêtre)"
+              >
+                Voir sur Google Maps
+              </a>
+            </div>
+
+            <div class="contact__bloc">
+              <h3 class="contact__bloc-titre">Horaires</h3>
+              <dl class="contact__horaires" aria-label="Horaires d'ouverture">
+                <dt>Mardi – Vendredi</dt>
+                <dd>10h00 – 19h00</dd>
+                <dt>Samedi</dt>
+                <dd>9h00 – 17h00</dd>
+                <dt>Dimanche &amp; Lundi</dt>
+                <dd>Fermé</dd>
+              </dl>
+            </div>
+
+            <div class="contact__bloc">
+              <h3 class="contact__bloc-titre">Téléphone</h3>
+              <a href="tel:+33142800914" class="contact__tel" aria-label="Appeler le 01 42 80 09 14">
+                01 42 80 09 14
+              </a>
+            </div>
+
+            <div class="contact__bloc">
+              <h3 class="contact__bloc-titre">Email</h3>
+              <a href="mailto:bonjour@ateliermane.fr" class="contact__email">
+                bonjour@ateliermane.fr
+              </a>
+            </div>
+
+            <!-- Placeholder carte -->
+            <div class="contact__map-placeholder" role="img" aria-label="Carte de localisation — 14 rue Notre-Dame-de-Lorette, Paris 9e">
+              <span class="contact__map-pin" aria-hidden="true">&#9679;</span>
+              <p class="contact__map-label">Paris 9e — Notre-Dame-de-Lorette</p>
+            </div>
+
+          </div>
+
+          <!-- Formulaire de contact -->
+          <div class="contact__form-wrap reveal reveal--delay-1">
+            <h3 class="contact__form-titre">Demander un rendez-vous</h3>
+            <p class="contact__form-note">Formulaire non fonctionnel — démonstration portfolio.</p>
+
+            <form class="contact__form" action="#" method="POST" novalidate aria-label="Formulaire de prise de rendez-vous">
+
+              <div class="form-group">
+                <label for="prenom" class="form-label">Prénom <span class="form-required" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="prenom"
+                  name="prenom"
+                  class="form-input"
+                  autocomplete="given-name"
+                  placeholder="Votre prénom"
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="nom" class="form-label">Nom <span class="form-required" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  class="form-input"
+                  autocomplete="family-name"
+                  placeholder="Votre nom"
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email <span class="form-required" aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  autocomplete="email"
+                  placeholder="vous@exemple.fr"
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="telephone" class="form-label">Téléphone</label>
+                <input
+                  type="tel"
+                  id="telephone"
+                  name="telephone"
+                  class="form-input"
+                  autocomplete="tel"
+                  placeholder="06 00 00 00 00"
+                />
+              </div>
+
+              <div class="form-group form-group--full">
+                <label for="prestation" class="form-label">Prestation souhaitée <span class="form-required" aria-hidden="true">*</span></label>
+                <select id="prestation" name="prestation" class="form-input form-select" aria-required="true">
+                  <option value="" disabled selected>Sélectionner une prestation</option>
+                  <option value="coupe">Coupe &amp; Style</option>
+                  <option value="coloration">Coloration</option>
+                  <option value="soin">Soin &amp; Traitement</option>
+                  <option value="event">Coiffure événementielle</option>
+                  <option value="autre">Autre / Consultation</option>
+                </select>
+              </div>
+
+              <div class="form-group form-group--full">
+                <label for="date" class="form-label">Date souhaitée</label>
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  class="form-input"
+                />
+              </div>
+
+              <div class="form-group form-group--full">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-input form-textarea"
+                  rows="4"
+                  placeholder="Précisez votre demande, la longueur de vos cheveux, toute information utile..."
+                ></textarea>
+              </div>
+
+              <div class="form-group form-group--full">
+                <button type="submit" class="btn btn--primary btn--full">
+                  Envoyer ma demande
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <p class="footer__logo">Atelier Mane</p>
+          <p class="footer__tagline">L'art de sublimer chaque chevelure</p>
+        </div>
+        <nav class="footer__nav" aria-label="Liens footer">
+          <ul role="list" class="footer__nav-list">
+            <li><a href="#apropos" class="footer__link">À propos</a></li>
+            <li><a href="#services" class="footer__link">Services</a></li>
+            <li><a href="#galerie" class="footer__link">Galerie</a></li>
+            <li><a href="#tarifs" class="footer__link">Tarifs</a></li>
+            <li><a href="#contact" class="footer__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer__legal">
+          <p>14 rue Notre-Dame-de-Lorette, 75009 Paris</p>
+          <p>
+            <a href="tel:+33142800914" class="footer__link">01 42 80 09 14</a>
+            &nbsp;·&nbsp;
+            <a href="mailto:bonjour@ateliermane.fr" class="footer__link">bonjour@ateliermane.fr</a>
+          </p>
+        </div>
+      </div>
+      <p class="footer__copyright">
+        &copy; 2026 Atelier Mane — Tous droits réservés. Site réalisé à titre de démonstration portfolio.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Flowsync — Gestion de projets et collaboration en temps réel. Planifiez, suivez, livrez." />
+  <title>Flowsync — Collaboration en temps réel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav-wrapper" id="site-header" role="banner">
+    <nav class="nav-container" aria-label="Navigation principale">
+      <a href="#hero" class="nav-logo" aria-label="Flowsync — retour en haut">
+        <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <rect width="28" height="28" rx="8" fill="#2E7BFF"/>
+          <path d="M7 14h4l3-6 3 12 3-6h4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">Flowsync</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#features" class="nav-link">Fonctionnalités</a></li>
+        <li><a href="#how-it-works" class="nav-link">Comment ça marche</a></li>
+        <li><a href="#pricing" class="nav-link">Tarifs</a></li>
+        <li><a href="#testimonials" class="nav-link">Avis</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#pricing" class="btn btn-ghost">Se connecter</a>
+        <a href="#cta" class="btn btn-primary">Commencer gratuitement</a>
+      </div>
+
+      <button class="nav-burger" aria-controls="mobile-menu" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </nav>
+
+    <dialog id="mobile-menu" class="mobile-nav" aria-label="Menu mobile">
+      <div class="mobile-nav-inner">
+        <button class="mobile-nav-close" aria-label="Fermer le menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <ul class="mobile-nav-links" role="list">
+          <li><a href="#features" class="mobile-nav-link">Fonctionnalités</a></li>
+          <li><a href="#how-it-works" class="mobile-nav-link">Comment ça marche</a></li>
+          <li><a href="#pricing" class="mobile-nav-link">Tarifs</a></li>
+          <li><a href="#testimonials" class="mobile-nav-link">Avis</a></li>
+          <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+        </ul>
+        <div class="mobile-nav-actions">
+          <a href="#pricing" class="btn btn-ghost btn-full">Se connecter</a>
+          <a href="#cta" class="btn btn-primary btn-full">Commencer gratuitement</a>
+        </div>
+      </div>
+    </dialog>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge" aria-label="Nouveauté">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Nouveau — Vue timeline IA disponible
+          </div>
+
+          <h1 id="hero-heading" class="hero-title">
+            La collaboration<br />
+            <span class="hero-title-accent">sans friction</span><br />
+            pour vos équipes
+          </h1>
+
+          <p class="hero-subtitle">
+            Flowsync centralise vos projets, tâches et conversations en un seul espace.
+            Planifiez, suivez et livrez — en temps réel, depuis n'importe où.
+          </p>
+
+          <div class="hero-stats" aria-label="Chiffres clés">
+            <div class="hero-stat">
+              <span class="stat-number" data-target="10000">0</span>
+              <span class="stat-suffix">+</span>
+              <span class="stat-label">projets actifs</span>
+            </div>
+            <div class="hero-stat-divider" aria-hidden="true"></div>
+            <div class="hero-stat">
+              <span class="stat-number" data-target="50000">0</span>
+              <span class="stat-suffix">+</span>
+              <span class="stat-label">utilisateurs</span>
+            </div>
+            <div class="hero-stat-divider" aria-hidden="true"></div>
+            <div class="hero-stat">
+              <span class="stat-number" data-target="99">0</span>
+              <span class="stat-suffix">%</span>
+              <span class="stat-label">uptime garanti</span>
+            </div>
+          </div>
+
+          <div class="hero-ctas">
+            <a href="#cta" class="btn btn-primary btn-large">Commencer gratuitement</a>
+            <a href="#how-it-works" class="btn btn-secondary btn-large">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M7 9l2 2 2-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Voir la démo
+            </a>
+          </div>
+        </div>
+
+        <!-- Faux dashboard CSS -->
+        <div class="hero-dashboard" aria-label="Aperçu de l'interface Flowsync" role="img">
+          <div class="dashboard-window">
+            <div class="dashboard-titlebar">
+              <div class="titlebar-dots" aria-hidden="true">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="titlebar-label">Flowsync — Projet Alpha Q1</span>
+            </div>
+
+            <div class="dashboard-body">
+              <!-- Sidebar -->
+              <aside class="db-sidebar" aria-hidden="true">
+                <div class="db-sidebar-logo">
+                  <div class="db-logo-icon"></div>
+                </div>
+                <nav class="db-nav">
+                  <div class="db-nav-item db-nav-item--active">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <rect x="1" y="1" width="6" height="6" rx="1.5" fill="currentColor"/>
+                      <rect x="9" y="1" width="6" height="6" rx="1.5" fill="currentColor" opacity=".4"/>
+                      <rect x="1" y="9" width="6" height="6" rx="1.5" fill="currentColor" opacity=".4"/>
+                      <rect x="9" y="9" width="6" height="6" rx="1.5" fill="currentColor" opacity=".4"/>
+                    </svg>
+                  </div>
+                  <div class="db-nav-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M2 4h12M2 8h8M2 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div class="db-nav-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <circle cx="8" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/>
+                      <path d="M2 14c0-3.314 2.686-5 6-5s6 1.686 6 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div class="db-nav-item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M8 2v4l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                      <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                  </div>
+                </nav>
+              </aside>
+
+              <!-- Contenu principal -->
+              <div class="db-main" aria-hidden="true">
+                <!-- Header -->
+                <div class="db-header">
+                  <div class="db-header-title">
+                    <div class="db-label db-label--lg"></div>
+                  </div>
+                  <div class="db-header-actions">
+                    <div class="db-avatar-stack">
+                      <div class="db-avatar db-avatar--blue"></div>
+                      <div class="db-avatar db-avatar--violet"></div>
+                      <div class="db-avatar db-avatar--green"></div>
+                    </div>
+                    <div class="db-btn-add"></div>
+                  </div>
+                </div>
+
+                <!-- KPIs -->
+                <div class="db-kpi-row">
+                  <div class="db-kpi db-kpi--1">
+                    <div class="db-kpi-icon"></div>
+                    <div class="db-kpi-content">
+                      <div class="db-label db-label--sm db-label--muted"></div>
+                      <div class="db-label db-label--md db-label--bold"></div>
+                    </div>
+                    <div class="db-kpi-spark">
+                      <div class="spark-bar" style="height:40%"></div>
+                      <div class="spark-bar" style="height:60%"></div>
+                      <div class="spark-bar" style="height:50%"></div>
+                      <div class="spark-bar" style="height:80%"></div>
+                      <div class="spark-bar" style="height:70%"></div>
+                      <div class="spark-bar" style="height:90%"></div>
+                    </div>
+                  </div>
+                  <div class="db-kpi db-kpi--2">
+                    <div class="db-kpi-icon db-kpi-icon--violet"></div>
+                    <div class="db-kpi-content">
+                      <div class="db-label db-label--sm db-label--muted"></div>
+                      <div class="db-label db-label--md db-label--bold"></div>
+                    </div>
+                    <div class="db-kpi-spark">
+                      <div class="spark-bar spark-bar--violet" style="height:55%"></div>
+                      <div class="spark-bar spark-bar--violet" style="height:70%"></div>
+                      <div class="spark-bar spark-bar--violet" style="height:65%"></div>
+                      <div class="spark-bar spark-bar--violet" style="height:85%"></div>
+                      <div class="spark-bar spark-bar--violet" style="height:75%"></div>
+                      <div class="spark-bar spark-bar--violet" style="height:95%"></div>
+                    </div>
+                  </div>
+                  <div class="db-kpi db-kpi--3">
+                    <div class="db-kpi-icon db-kpi-icon--green"></div>
+                    <div class="db-kpi-content">
+                      <div class="db-label db-label--sm db-label--muted"></div>
+                      <div class="db-label db-label--md db-label--bold"></div>
+                    </div>
+                    <div class="db-progress-ring" role="img" aria-label="Progression 72%">
+                      <svg viewBox="0 0 36 36" class="ring-svg">
+                        <circle class="ring-track" cx="18" cy="18" r="14"/>
+                        <circle class="ring-fill ring-fill--green" cx="18" cy="18" r="14" stroke-dasharray="72 28"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Timeline tâches -->
+                <div class="db-tasks">
+                  <div class="db-tasks-header">
+                    <div class="db-label db-label--sm"></div>
+                    <div class="db-tabs">
+                      <div class="db-tab db-tab--active"></div>
+                      <div class="db-tab"></div>
+                      <div class="db-tab"></div>
+                    </div>
+                  </div>
+                  <div class="db-task-list">
+                    <div class="db-task db-task--anim-1">
+                      <div class="db-task-check db-task-check--done"></div>
+                      <div class="db-task-content">
+                        <div class="db-label db-label--sm"></div>
+                        <div class="db-label db-label--xs db-label--muted"></div>
+                      </div>
+                      <div class="db-tag db-tag--green">Terminé</div>
+                      <div class="db-avatar db-avatar--blue db-avatar--sm"></div>
+                    </div>
+                    <div class="db-task db-task--anim-2">
+                      <div class="db-task-check"></div>
+                      <div class="db-task-content">
+                        <div class="db-label db-label--sm"></div>
+                        <div class="db-label db-label--xs db-label--muted"></div>
+                      </div>
+                      <div class="db-tag db-tag--blue">En cours</div>
+                      <div class="db-avatar db-avatar--violet db-avatar--sm"></div>
+                    </div>
+                    <div class="db-task db-task--anim-3">
+                      <div class="db-task-check"></div>
+                      <div class="db-task-content">
+                        <div class="db-label db-label--sm"></div>
+                        <div class="db-label db-label--xs db-label--muted"></div>
+                      </div>
+                      <div class="db-tag db-tag--yellow">Revue</div>
+                      <div class="db-avatar db-avatar--green db-avatar--sm"></div>
+                    </div>
+                    <div class="db-task db-task--anim-4">
+                      <div class="db-task-check"></div>
+                      <div class="db-task-content">
+                        <div class="db-label db-label--sm"></div>
+                        <div class="db-label db-label--xs db-label--muted"></div>
+                      </div>
+                      <div class="db-tag db-tag--gray">À faire</div>
+                      <div class="db-avatar db-avatar--blue db-avatar--sm"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Notifications flottantes -->
+          <div class="db-notif db-notif--1" aria-hidden="true">
+            <div class="notif-icon notif-icon--blue">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M2 6l3 3 5-5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="notif-content">
+              <span class="notif-title">Tâche validée</span>
+              <span class="notif-sub">Design sprint · Léa M.</span>
+            </div>
+          </div>
+
+          <div class="db-notif db-notif--2" aria-hidden="true">
+            <div class="notif-icon notif-icon--violet">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <circle cx="6" cy="4" r="2" stroke="white" stroke-width="1.2"/>
+                <path d="M2 11c0-2.21 1.79-3.5 4-3.5s4 1.29 4 3.5" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="notif-content">
+              <span class="notif-title">Marc R. a rejoint</span>
+              <span class="notif-sub">Projet Alpha Q1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LOGOS CLIENTS ===== -->
+    <section class="logos-section" aria-labelledby="logos-heading">
+      <div class="container">
+        <p id="logos-heading" class="logos-heading">Ils font confiance à Flowsync</p>
+      </div>
+      <div class="logos-track-wrapper" aria-label="Logos des entreprises clientes">
+        <div class="logos-track" aria-hidden="true">
+          <div class="logo-item"><span class="logo-brand">Nexeo</span></div>
+          <div class="logo-item"><span class="logo-brand">Kaeltis</span></div>
+          <div class="logo-item"><span class="logo-brand">Vorteum</span></div>
+          <div class="logo-item"><span class="logo-brand">Archivex</span></div>
+          <div class="logo-item"><span class="logo-brand">Lunaris</span></div>
+          <div class="logo-item"><span class="logo-brand">Prismtech</span></div>
+          <div class="logo-item"><span class="logo-brand">Celeris</span></div>
+          <div class="logo-item"><span class="logo-brand">Syndara</span></div>
+          <!-- Duplication pour le loop infini -->
+          <div class="logo-item" aria-hidden="true"><span class="logo-brand">Nexeo</span></div>
+          <div class="logo-item" aria-hidden="true"><span class="logo-brand">Kaeltis</span></div>
+          <div class="logo-item" aria-hidden="true"><span class="logo-brand">Vorteum</span></div>
+          <div class="logo-item" aria-hidden="true"><span class="logo-brand">Archivex</span></div>
+          <div class="logo-item" aria-hidden="true"><span class="logo-brand">Lunaris</span></div>
+          <div class="logo-item" aria-hidden="true"><span class="logo-brand">Prismtech</span></div>
+          <div class="logo-item" aria-hidden="true"><span class="logo-brand">Celeris</span></div>
+          <div class="logo-item" aria-hidden="true"><span class="logo-brand">Syndara</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FONCTIONNALITES ===== -->
+    <section id="features" class="features" aria-labelledby="features-heading">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-badge">Fonctionnalités</div>
+          <h2 id="features-heading" class="section-title">Tout ce dont votre équipe a besoin</h2>
+          <p class="section-subtitle">
+            Une plateforme pensée pour les équipes qui veulent avancer vite,
+            sans sacrifier la clarté ni la qualité.
+          </p>
+        </header>
+
+        <!-- 3 colonnes features -->
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon-wrap feature-icon-wrap--blue" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="2.5" rx="1.25" fill="#2E7BFF"/>
+                <rect x="3" y="10.75" width="12" height="2.5" rx="1.25" fill="#2E7BFF" opacity=".6"/>
+                <rect x="3" y="16.5" width="15" height="2.5" rx="1.25" fill="#2E7BFF" opacity=".35"/>
+                <circle cx="19" cy="17.75" r="3.5" fill="#2E7BFF"/>
+                <path d="M17.5 17.75l1.2 1.2 1.8-1.8" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Gestion des tâches</h3>
+            <p class="feature-card-desc">
+              Créez, assignez et suivez chaque tâche avec des priorités, échéances
+              et dépendances. Vue kanban, liste ou timeline — choisissez votre mode.
+            </p>
+            <ul class="feature-list" aria-label="Détails de la fonctionnalité">
+              <li>Tâches récurrentes automatisées</li>
+              <li>Sous-tâches imbriquées sur 3 niveaux</li>
+              <li>Filtres et vues personnalisées</li>
+            </ul>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon-wrap feature-icon-wrap--violet" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" stroke="#7C3AED" stroke-width="1.5"/>
+                <circle cx="7" cy="9" r="2" fill="#7C3AED"/>
+                <circle cx="17" cy="9" r="2" fill="#7C3AED" opacity=".6"/>
+                <circle cx="12" cy="16" r="2" fill="#7C3AED" opacity=".4"/>
+                <path d="M9 9l3 7M15 9l-3 7" stroke="#7C3AED" stroke-width="1.2" stroke-linecap="round" opacity=".5"/>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Collaboration temps réel</h3>
+            <p class="feature-card-desc">
+              Commentez, mentionnez et co-éditez en direct. Toutes les modifications
+              sont synchronisées instantanément pour toute votre équipe.
+            </p>
+            <ul class="feature-list" aria-label="Détails de la fonctionnalité">
+              <li>Curseurs en temps réel par utilisateur</li>
+              <li>Historique complet des modifications</li>
+              <li>Notifications contextuelles intelligentes</li>
+            </ul>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon-wrap feature-icon-wrap--green" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 20V12l4-4 4 4 4-6 4 6v8H4z" stroke="#059669" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M4 20V12l4-4 4 4 4-6 4 6v8H4z" fill="#059669" fill-opacity=".12"/>
+                <circle cx="8" cy="12" r="1.5" fill="#059669"/>
+                <circle cx="12" cy="12" r="1.5" fill="#059669" opacity=".6"/>
+                <circle cx="16" cy="10" r="1.5" fill="#059669" opacity=".4"/>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Rapports avancés</h3>
+            <p class="feature-card-desc">
+              Visualisez la vélocité, le burndown et les goulots d'étranglement.
+              Partagez des tableaux de bord personnalisés en un clic.
+            </p>
+            <ul class="feature-list" aria-label="Détails de la fonctionnalité">
+              <li>Export PDF et CSV automatique</li>
+              <li>Rapports hebdomadaires par email</li>
+              <li>Intégration Slack, Teams, Notion</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Feature showcase 1 : texte gauche, visuel droit -->
+        <div class="feature-showcase reveal">
+          <div class="feature-showcase-text">
+            <div class="feature-showcase-badge feature-showcase-badge--blue">Vue Timeline</div>
+            <h3 class="feature-showcase-title">Visualisez l'avancement de chaque sprint en un coup d'oeil</h3>
+            <p class="feature-showcase-desc">
+              La vue timeline de Flowsync affiche toutes les tâches sur un axe temporel
+              interactif. Identifiez immédiatement les chevauchements, les dépendances critiques
+              et les risques de retard avant qu'ils ne deviennent des problèmes.
+            </p>
+            <ul class="feature-showcase-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#2E7BFF" fill-opacity=".15"/><path d="M5 8l2 2 4-4" stroke="#2E7BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Glissez-déposez pour réorganiser
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#2E7BFF" fill-opacity=".15"/><path d="M5 8l2 2 4-4" stroke="#2E7BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Dépendances visualisées par flèches
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#2E7BFF" fill-opacity=".15"/><path d="M5 8l2 2 4-4" stroke="#2E7BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Alertes automatiques sur les conflits
+              </li>
+            </ul>
+          </div>
+          <div class="feature-showcase-visual feature-showcase-visual--timeline" aria-label="Aperçu de la vue timeline" role="img">
+            <div class="timeline-demo" aria-hidden="true">
+              <div class="tl-header">
+                <div class="tl-month">Mars</div>
+                <div class="tl-weeks">
+                  <span>S1</span><span>S2</span><span>S3</span><span>S4</span>
+                </div>
+                <div class="tl-month">Avril</div>
+                <div class="tl-weeks">
+                  <span>S1</span><span>S2</span><span>S3</span><span>S4</span>
+                </div>
+              </div>
+              <div class="tl-rows">
+                <div class="tl-row">
+                  <div class="tl-row-label">Design</div>
+                  <div class="tl-bar-area">
+                    <div class="tl-bar tl-bar--blue" style="left:0%;width:35%"></div>
+                  </div>
+                </div>
+                <div class="tl-row">
+                  <div class="tl-row-label">Dev Front</div>
+                  <div class="tl-bar-area">
+                    <div class="tl-bar tl-bar--violet" style="left:25%;width:45%"></div>
+                  </div>
+                </div>
+                <div class="tl-row">
+                  <div class="tl-row-label">Dev Back</div>
+                  <div class="tl-bar-area">
+                    <div class="tl-bar tl-bar--violet" style="left:20%;width:40%"></div>
+                  </div>
+                </div>
+                <div class="tl-row">
+                  <div class="tl-row-label">QA</div>
+                  <div class="tl-bar-area">
+                    <div class="tl-bar tl-bar--green" style="left:55%;width:30%"></div>
+                  </div>
+                </div>
+                <div class="tl-row">
+                  <div class="tl-row-label">Livraison</div>
+                  <div class="tl-bar-area">
+                    <div class="tl-bar tl-bar--accent" style="left:82%;width:12%"></div>
+                  </div>
+                </div>
+                <div class="tl-today-line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature showcase 2 : visuel gauche, texte droit -->
+        <div class="feature-showcase feature-showcase--reverse reveal">
+          <div class="feature-showcase-visual feature-showcase-visual--kanban" aria-label="Aperçu de la vue kanban" role="img">
+            <div class="kanban-demo" aria-hidden="true">
+              <div class="kanban-col">
+                <div class="kanban-col-header kanban-col-header--gray">
+                  <span>A faire</span>
+                  <span class="kanban-count">4</span>
+                </div>
+                <div class="kanban-card">
+                  <div class="kanban-card-tag kanban-card-tag--blue"></div>
+                  <div class="kanban-card-label"></div>
+                  <div class="kanban-card-sub"></div>
+                  <div class="kanban-card-footer">
+                    <div class="kanban-avatar kanban-avatar--blue"></div>
+                  </div>
+                </div>
+                <div class="kanban-card">
+                  <div class="kanban-card-tag kanban-card-tag--violet"></div>
+                  <div class="kanban-card-label"></div>
+                  <div class="kanban-card-sub"></div>
+                  <div class="kanban-card-footer">
+                    <div class="kanban-avatar kanban-avatar--violet"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="kanban-col">
+                <div class="kanban-col-header kanban-col-header--blue">
+                  <span>En cours</span>
+                  <span class="kanban-count">2</span>
+                </div>
+                <div class="kanban-card kanban-card--active">
+                  <div class="kanban-card-tag kanban-card-tag--blue"></div>
+                  <div class="kanban-card-label"></div>
+                  <div class="kanban-card-sub"></div>
+                  <div class="kanban-card-footer">
+                    <div class="kanban-avatar kanban-avatar--green"></div>
+                    <div class="kanban-progress-bar">
+                      <div class="kanban-progress-fill" style="width:65%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="kanban-col">
+                <div class="kanban-col-header kanban-col-header--green">
+                  <span>Terminé</span>
+                  <span class="kanban-count">7</span>
+                </div>
+                <div class="kanban-card">
+                  <div class="kanban-card-tag kanban-card-tag--green"></div>
+                  <div class="kanban-card-label"></div>
+                  <div class="kanban-card-check">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <circle cx="7" cy="7" r="7" fill="#059669" fill-opacity=".15"/>
+                      <path d="M4.5 7l2 2 3-3" stroke="#059669" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-showcase-text">
+            <div class="feature-showcase-badge feature-showcase-badge--violet">Vue Kanban</div>
+            <h3 class="feature-showcase-title">Pilotez vos sprints avec une clarté absolue</h3>
+            <p class="feature-showcase-desc">
+              Glissez vos tâches d'une colonne à l'autre en temps réel, avec mise à jour
+              instantanée pour toute l'équipe. Les limites WIP vous alertent automatiquement
+              quand une colonne est surchargée.
+            </p>
+            <ul class="feature-showcase-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#7C3AED" fill-opacity=".15"/><path d="M5 8l2 2 4-4" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Colonnes personnalisables
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#7C3AED" fill-opacity=".15"/><path d="M5 8l2 2 4-4" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Limites WIP configurables
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#7C3AED" fill-opacity=".15"/><path d="M5 8l2 2 4-4" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Filtres par personne, tag ou priorité
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMMENT CA MARCHE ===== -->
+    <section id="how-it-works" class="how-it-works" aria-labelledby="hiw-heading">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-badge">Processus</div>
+          <h2 id="hiw-heading" class="section-title">Opérationnel en moins de 5 minutes</h2>
+          <p class="section-subtitle">
+            Pas de formation, pas de consultant. Flowsync est conçu
+            pour que votre équipe soit productive dès le premier jour.
+          </p>
+        </header>
+
+        <ol class="hiw-steps" aria-label="Etapes pour démarrer avec Flowsync">
+          <li class="hiw-step reveal">
+            <div class="hiw-step-number" aria-hidden="true">01</div>
+            <div class="hiw-step-connector" aria-hidden="true"></div>
+            <div class="hiw-step-content">
+              <div class="hiw-step-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                  <rect width="28" height="28" rx="8" fill="#EFF6FF"/>
+                  <path d="M14 7v7l4 2" stroke="#2E7BFF" stroke-width="1.8" stroke-linecap="round"/>
+                  <circle cx="14" cy="14" r="8" stroke="#2E7BFF" stroke-width="1.8"/>
+                </svg>
+              </div>
+              <h3 class="hiw-step-title">Créez votre espace</h3>
+              <p class="hiw-step-desc">
+                Inscrivez-vous en 30 secondes. Nommez votre premier espace de travail
+                et choisissez un template adapté à votre méthode (Scrum, Kanban, OKR).
+              </p>
+            </div>
+          </li>
+          <li class="hiw-step reveal">
+            <div class="hiw-step-number" aria-hidden="true">02</div>
+            <div class="hiw-step-connector" aria-hidden="true"></div>
+            <div class="hiw-step-content">
+              <div class="hiw-step-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                  <rect width="28" height="28" rx="8" fill="#F5F3FF"/>
+                  <circle cx="10" cy="12" r="3" stroke="#7C3AED" stroke-width="1.8"/>
+                  <circle cx="18" cy="12" r="3" stroke="#7C3AED" stroke-width="1.8"/>
+                  <path d="M6 22c0-3 1.8-4.5 4-4.5M22 22c0-3-1.8-4.5-4-4.5M14 22c0-3-1.8-4.5-4-4.5" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="hiw-step-title">Invitez votre équipe</h3>
+              <p class="hiw-step-desc">
+                Envoyez des invitations par email ou partagez un lien. Attribuez
+                des rôles précis (admin, membre, observateur) pour garder le contrôle.
+              </p>
+            </div>
+          </li>
+          <li class="hiw-step reveal">
+            <div class="hiw-step-number" aria-hidden="true">03</div>
+            <div class="hiw-step-connector" aria-hidden="true"></div>
+            <div class="hiw-step-content">
+              <div class="hiw-step-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                  <rect width="28" height="28" rx="8" fill="#ECFDF5"/>
+                  <path d="M7 14h4l3-6 3 12 3-6h4" stroke="#059669" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="hiw-step-title">Planifiez vos projets</h3>
+              <p class="hiw-step-desc">
+                Créez vos tâches, définissez des priorités et des jalons.
+                La vue automatique s'adapte au type de projet sans configuration manuelle.
+              </p>
+            </div>
+          </li>
+          <li class="hiw-step reveal">
+            <div class="hiw-step-number" aria-hidden="true">04</div>
+            <div class="hiw-step-content">
+              <div class="hiw-step-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                  <rect width="28" height="28" rx="8" fill="#FFF7ED"/>
+                  <path d="M9 14l4 4 6-7" stroke="#EA580C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="14" cy="14" r="8" stroke="#EA580C" stroke-width="1.8"/>
+                </svg>
+              </div>
+              <h3 class="hiw-step-title">Livrez et mesurez</h3>
+              <p class="hiw-step-desc">
+                Suivez la progression en temps réel. Les rapports automatiques vous donnent
+                une vision claire des performances et points d'amélioration.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== TARIFS ===== -->
+    <section id="pricing" class="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-badge">Tarifs</div>
+          <h2 id="pricing-heading" class="section-title">Simple, transparent, sans surprise</h2>
+          <p class="section-subtitle">Commencez gratuitement. Évoluez quand vous en avez besoin.</p>
+        </header>
+
+        <div class="pricing-toggle" role="group" aria-label="Fréquence de facturation">
+          <span class="pricing-toggle-label" id="label-monthly">Mensuel</span>
+          <button
+            class="pricing-switch"
+            id="pricing-switch"
+            role="switch"
+            aria-checked="false"
+            aria-labelledby="label-monthly label-annual"
+          >
+            <span class="pricing-switch-thumb"></span>
+          </button>
+          <span class="pricing-toggle-label" id="label-annual">
+            Annuel
+            <span class="pricing-save-badge">-20%</span>
+          </span>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Free -->
+          <article class="pricing-card reveal" aria-labelledby="plan-free-name plan-free-price">
+            <div class="pricing-card-header">
+              <h3 class="pricing-plan-name" id="plan-free-name">Free</h3>
+              <div class="pricing-price">
+                <span class="pricing-amount" data-monthly="0" data-annual="0">0</span>
+                <span class="pricing-currency">€</span>
+                <span class="pricing-period">/mois</span>
+              </div>
+              <p class="pricing-desc">Idéal pour les freelances et petites équipes qui démarrent.</p>
+            </div>
+            <a href="#cta" class="btn btn-outline btn-full" aria-describedby="plan-free-name">Commencer gratuitement</a>
+            <ul class="pricing-features" aria-label="Fonctionnalités incluses dans le plan Free">
+              <li class="pricing-feature pricing-feature--included">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#059669" fill-opacity=".12"/><path d="M5 8l2 2 4-4" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                3 projets actifs
+              </li>
+              <li class="pricing-feature pricing-feature--included">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#059669" fill-opacity=".12"/><path d="M5 8l2 2 4-4" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                5 membres max
+              </li>
+              <li class="pricing-feature pricing-feature--included">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#059669" fill-opacity=".12"/><path d="M5 8l2 2 4-4" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Vue kanban et liste
+              </li>
+              <li class="pricing-feature pricing-feature--excluded">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#9CA3AF" fill-opacity=".12"/><path d="M5.5 10.5l5-5M10.5 10.5l-5-5" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Vue timeline
+              </li>
+              <li class="pricing-feature pricing-feature--excluded">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#9CA3AF" fill-opacity=".12"/><path d="M5.5 10.5l5-5M10.5 10.5l-5-5" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Rapports avancés
+              </li>
+              <li class="pricing-feature pricing-feature--excluded">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#9CA3AF" fill-opacity=".12"/><path d="M5.5 10.5l5-5M10.5 10.5l-5-5" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Intégrations tierces
+              </li>
+            </ul>
+          </article>
+
+          <!-- Pro -->
+          <article class="pricing-card pricing-card--featured reveal" aria-labelledby="plan-pro-name plan-pro-price">
+            <div class="pricing-popular-badge" aria-label="Plan le plus populaire">Populaire</div>
+            <div class="pricing-card-header">
+              <h3 class="pricing-plan-name" id="plan-pro-name">Pro</h3>
+              <div class="pricing-price">
+                <span class="pricing-amount" data-monthly="29" data-annual="23">29</span>
+                <span class="pricing-currency">€</span>
+                <span class="pricing-period">/mois</span>
+              </div>
+              <p class="pricing-desc">Pour les équipes produit qui veulent aller plus vite.</p>
+            </div>
+            <a href="#cta" class="btn btn-primary btn-full" aria-describedby="plan-pro-name">Commencer l'essai gratuit</a>
+            <ul class="pricing-features" aria-label="Fonctionnalités incluses dans le plan Pro">
+              <li class="pricing-feature pricing-feature--included">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#2E7BFF" fill-opacity=".12"/><path d="M5 8l2 2 4-4" stroke="#2E7BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Projets illimités
+              </li>
+              <li class="pricing-feature pricing-feature--included">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#2E7BFF" fill-opacity=".12"/><path d="M5 8l2 2 4-4" stroke="#2E7BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                20 membres max
+              </li>
+              <li class="pricing-feature pricing-feature--included">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#2E7BFF" fill-opacity=".12"/><path d="M5 8l2 2 4-4" stroke="#2E7BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Toutes les vues (kanban, liste, timeline)
+              </li>
+              <li class="pricing-feature pricing-feature--included">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#2E7BFF" fill-opacity=".12"/><path d="M5 8l2 2 4-4" stroke="#2E7BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Rapports avancés
+              </li>
+              <li class="pricing-feature pricing-feature--included">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#2E7BFF" fill-opacity=".12"/><path d="M5 8l2 2 4-4" stroke="#2E7BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Intégrations Slack et Notion
+              </li>
+              <li class="pricing-feature pricing-feature--excluded">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#9CA3AF" fill-opacity=".12"/><path d="M5.5 10.5l5-5M10.5 10.5l-5-5" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/></svg>
+                SSO et SAML
+              </li>
+            </ul>
+          </article>
+
+          <!-- Team -->
+          <article class="pricing-card reveal" aria-labelledby="plan-team-name plan-team-price">
+            <div class="pricing-card-header">
+              <h3 class="pricing-plan-name" id="plan-team-name">Team</h3>
+              <div class="pricing-price">
+                <span class="pricing-amount" data-monthly="79" data-annual="63">79</span>
+                <span class="pricing-currency">€</span>
+                <span class="pricing-period">/mois</span>
+              </div>
+              <p class="pricing-desc">Pour les organisations qui ont besoin de contrôle total.</p>
+            </div>
+            <a href="#cta" class="btn btn-outline btn-full" aria-describedby="plan-team-name">Contacter les ventes</a>
+            <ul class="pricing-features" aria-label="Fonctionnalités incluses dans le plan Team">
+              <li class="pricing-feature pricing-feature--included">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#059669" fill-opacity=".12"/><path d="M5 8l2 2 4-4" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Membres illimités
+              </li>
+              <li class="pricing-feature pricing-feature--included">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#059669" fill-opacity=".12"/><path d="M5 8l2 2 4-4" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Tout du plan Pro
+              </li>
+              <li class="pricing-feature pricing-feature--included">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#059669" fill-opacity=".12"/><path d="M5 8l2 2 4-4" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                SSO et SAML
+              </li>
+              <li class="pricing-feature pricing-feature--included">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#059669" fill-opacity=".12"/><path d="M5 8l2 2 4-4" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Audit logs 12 mois
+              </li>
+              <li class="pricing-feature pricing-feature--included">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#059669" fill-opacity=".12"/><path d="M5 8l2 2 4-4" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Support prioritaire dédié
+              </li>
+              <li class="pricing-feature pricing-feature--included">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#059669" fill-opacity=".12"/><path d="M5 8l2 2 4-4" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                SLA garanti 99.9%
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TEMOIGNAGES ===== -->
+    <section id="testimonials" class="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-badge">Avis clients</div>
+          <h2 id="testimonials-heading" class="section-title">Ce qu'ils en disent</h2>
+          <p class="section-subtitle">Plus de 50 000 équipes font confiance à Flowsync chaque jour.</p>
+        </header>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal" aria-label="Témoignage de Léa Morin">
+            <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+              <svg width="80" height="14" viewBox="0 0 80 14" fill="none" aria-hidden="true">
+                <path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L7 1z" fill="#F59E0B"/>
+                <path d="M23 1l1.8 3.6L29 5.3l-3 2.9.7 4.1L23 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L23 1z" fill="#F59E0B"/>
+                <path d="M39 1l1.8 3.6L45 5.3l-3 2.9.7 4.1L39 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L39 1z" fill="#F59E0B"/>
+                <path d="M55 1l1.8 3.6L61 5.3l-3 2.9.7 4.1L55 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L55 1z" fill="#F59E0B"/>
+                <path d="M71 1l1.8 3.6L77 5.3l-3 2.9.7 4.1L71 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L71 1z" fill="#F59E0B"/>
+              </svg>
+            </div>
+            <blockquote class="testimonial-quote">
+              "Flowsync a divisé nos runions de suivi par deux. Tout le monde a la meme
+              vision du projet en temps reel. Impossible de revenir en arriere."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar testimonial-avatar--blue" aria-hidden="true">
+                <span>LM</span>
+              </div>
+              <div class="testimonial-meta">
+                <strong class="testimonial-name">Léa Morin</strong>
+                <span class="testimonial-role">Head of Product chez Nexeo</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card reveal" aria-label="Témoignage de Karim Bensaid">
+            <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+              <svg width="80" height="14" viewBox="0 0 80 14" fill="none" aria-hidden="true">
+                <path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L7 1z" fill="#F59E0B"/>
+                <path d="M23 1l1.8 3.6L29 5.3l-3 2.9.7 4.1L23 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L23 1z" fill="#F59E0B"/>
+                <path d="M39 1l1.8 3.6L45 5.3l-3 2.9.7 4.1L39 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L39 1z" fill="#F59E0B"/>
+                <path d="M55 1l1.8 3.6L61 5.3l-3 2.9.7 4.1L55 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L55 1z" fill="#F59E0B"/>
+                <path d="M71 1l1.8 3.6L77 5.3l-3 2.9.7 4.1L71 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L71 1z" fill="#F59E0B"/>
+              </svg>
+            </div>
+            <blockquote class="testimonial-quote">
+              "En tant que CTO, j'avais besoin d'un outil que mes devs adorent ET
+              que mes managers comprennent. Flowsync est le premier qui coche les deux."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar testimonial-avatar--violet" aria-hidden="true">
+                <span>KB</span>
+              </div>
+              <div class="testimonial-meta">
+                <strong class="testimonial-name">Karim Bensaid</strong>
+                <span class="testimonial-role">CTO chez Vorteum</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card reveal" aria-label="Témoignage de Sophie Vandamme">
+            <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+              <svg width="80" height="14" viewBox="0 0 80 14" fill="none" aria-hidden="true">
+                <path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L7 1z" fill="#F59E0B"/>
+                <path d="M23 1l1.8 3.6L29 5.3l-3 2.9.7 4.1L23 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L23 1z" fill="#F59E0B"/>
+                <path d="M39 1l1.8 3.6L45 5.3l-3 2.9.7 4.1L39 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L39 1z" fill="#F59E0B"/>
+                <path d="M55 1l1.8 3.6L61 5.3l-3 2.9.7 4.1L55 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L55 1z" fill="#F59E0B"/>
+                <path d="M71 1l1.8 3.6L77 5.3l-3 2.9.7 4.1L71 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L71 1z" fill="#F59E0B"/>
+              </svg>
+            </div>
+            <blockquote class="testimonial-quote">
+              "Nous gérons 12 projets simultanés pour des clients différents.
+              Flowsync est le seul outil qui nous permet de cloisonner et visualiser
+              tout en même temps sans perdre la tête."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar testimonial-avatar--green" aria-hidden="true">
+                <span>SV</span>
+              </div>
+              <div class="testimonial-meta">
+                <strong class="testimonial-name">Sophie Vandamme</strong>
+                <span class="testimonial-role">Operations Manager chez Prismtech</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card reveal" aria-label="Témoignage de Thomas Arch">
+            <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+              <svg width="80" height="14" viewBox="0 0 80 14" fill="none" aria-hidden="true">
+                <path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L7 1z" fill="#F59E0B"/>
+                <path d="M23 1l1.8 3.6L29 5.3l-3 2.9.7 4.1L23 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L23 1z" fill="#F59E0B"/>
+                <path d="M39 1l1.8 3.6L45 5.3l-3 2.9.7 4.1L39 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L39 1z" fill="#F59E0B"/>
+                <path d="M55 1l1.8 3.6L61 5.3l-3 2.9.7 4.1L55 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L55 1z" fill="#F59E0B"/>
+                <path d="M71 1l1.8 3.6L77 5.3l-3 2.9.7 4.1L71 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L71 1z" fill="#F59E0B"/>
+              </svg>
+            </div>
+            <blockquote class="testimonial-quote">
+              "La migration depuis Jira a pris une matinée. L'onboarding de 40 personnes
+              s'est fait en autonomie complète. Personne n'a eu besoin de formation."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar testimonial-avatar--orange" aria-hidden="true">
+                <span>TA</span>
+              </div>
+              <div class="testimonial-meta">
+                <strong class="testimonial-name">Thomas Arch</strong>
+                <span class="testimonial-role">Scrum Master chez Syndara</span>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq" class="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-badge">FAQ</div>
+          <h2 id="faq-heading" class="section-title">Questions fréquentes</h2>
+        </header>
+
+        <div class="faq-list" role="list">
+          <div class="faq-item" role="listitem">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-1"
+              id="faq-btn-1"
+            >
+              <span>Puis-je importer mes projets depuis Jira ou Trello ?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-btn-1">
+              <div class="faq-answer-inner">
+                Oui. Flowsync propose un import natif depuis Jira (JSON), Trello (JSON),
+                Asana (CSV) et Monday. La migration prend en général moins d'une heure
+                pour un projet de 500 tâches. Les assignations, dates et commentaires
+                sont préservés.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-2"
+              id="faq-btn-2"
+            >
+              <span>Y a-t-il une limite au nombre de projets sur le plan Free ?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-btn-2">
+              <div class="faq-answer-inner">
+                Le plan Free permet de gérer jusqu'à 3 projets actifs simultanément
+                avec 5 membres maximum. Les projets archivés ne comptent pas dans
+                la limite. Passez en Pro à tout moment pour débloquer les projets illimités.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-3"
+              id="faq-btn-3"
+            >
+              <span>Mes données sont-elles sécurisées et conformes au RGPD ?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-btn-3">
+              <div class="faq-answer-inner">
+                Flowsync est hébergé en Europe (AWS eu-west-1), chiffré en transit
+                (TLS 1.3) et au repos (AES-256). Nous sommes conformes RGPD :
+                DPA disponible, droit à l'oubli appliqué sous 72h, pas de revente
+                de données. Les plans Team bénéficient d'audit logs complets sur 12 mois.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-4"
+              id="faq-btn-4"
+            >
+              <span>Quelle est la politique d'essai gratuit ?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-btn-4">
+              <div class="faq-answer-inner">
+                Tous les plans payants bénéficient d'un essai gratuit de 14 jours,
+                sans carte bancaire requise. A la fin de l'essai, vous choisissez
+                votre plan ou repassez automatiquement en Free. Aucun frais caché,
+                annulation possible à tout moment.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-5"
+              id="faq-btn-5"
+            >
+              <span>Existe-t-il une application mobile ?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-btn-5">
+              <div class="faq-answer-inner">
+                Oui. Les applications iOS et Android sont disponibles gratuitement
+                et incluses dans tous les plans. L'application mobile offre toutes
+                les fonctionnalités principales : gestion des tâches, notifications push,
+                mode hors ligne avec synchronisation automatique au retour de connexion.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA FINAL ===== -->
+    <section id="cta" class="cta-final" aria-labelledby="cta-heading">
+      <div class="cta-bg-gradient" aria-hidden="true"></div>
+      <div class="cta-bg-grid" aria-hidden="true"></div>
+      <div class="container cta-container">
+        <div class="cta-content">
+          <h2 id="cta-heading" class="cta-title">
+            Votre équipe mérite mieux<br />qu'une feuille de calcul
+          </h2>
+          <p class="cta-subtitle">
+            Rejoignez 50 000+ professionnels qui ont choisi Flowsync pour
+            livrer leurs projets à temps et sans stress.
+          </p>
+          <div class="cta-actions">
+            <a href="#" class="btn btn-white btn-large">Commencer gratuitement</a>
+            <a href="#" class="btn btn-white-ghost btn-large">Voir la démo</a>
+          </div>
+          <p class="cta-note">Essai 14 jours — Aucune carte bancaire requise</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo" aria-label="Flowsync — retour en haut">
+          <svg class="logo-icon" width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <rect width="28" height="28" rx="8" fill="#2E7BFF"/>
+            <path d="M7 14h4l3-6 3 12 3-6h4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="logo-text">Flowsync</span>
+        </a>
+        <p class="footer-tagline">La collaboration sans friction pour vos equipes.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navigation du pied de page">
+        <div class="footer-nav-col">
+          <h3 class="footer-nav-title">Produit</h3>
+          <ul role="list">
+            <li><a href="#features" class="footer-link">Fonctionnalites</a></li>
+            <li><a href="#pricing" class="footer-link">Tarifs</a></li>
+            <li><a href="#" class="footer-link">Integrations</a></li>
+            <li><a href="#" class="footer-link">Nouveautes</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h3 class="footer-nav-title">Entreprise</h3>
+          <ul role="list">
+            <li><a href="#" class="footer-link">A propos</a></li>
+            <li><a href="#" class="footer-link">Blog</a></li>
+            <li><a href="#" class="footer-link">Carrières</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h3 class="footer-nav-title">Ressources</h3>
+          <ul role="list">
+            <li><a href="#" class="footer-link">Documentation</a></li>
+            <li><a href="#" class="footer-link">Guides</a></li>
+            <li><a href="#faq" class="footer-link">FAQ</a></li>
+            <li><a href="#" class="footer-link">Statut</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="footer-copy">2024 Flowsync. Tous droits reserves.</p>
+        <nav class="footer-legal" aria-label="Liens légaux">
+          <a href="#" class="footer-link">Confidentialite</a>
+          <a href="#" class="footer-link">CGU</a>
+          <a href="#" class="footer-link">Cookies</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

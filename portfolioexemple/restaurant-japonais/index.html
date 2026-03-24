@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Umami Protocol — Restaurant de spécialités japonaises et cuisine moléculaire à Paris. Menu dégustation 7 services par le chef Kenji Mori. 18 couverts, du mardi au samedi." />
+  <title>Umami Protocol — Cuisine Japonaise Moléculaire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a href="#contenu-principal" class="skip-link">Aller au contenu</a>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav-principal" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="Umami Protocol — retour en haut">
+        <span class="nav__logo-kanji" aria-hidden="true">旨</span>
+        <span class="nav__logo-text">Umami Protocol</span>
+      </a>
+      <div class="nav__links" id="nav-links">
+        <a href="#concept" class="nav__link">Concept</a>
+        <a href="#menu" class="nav__link">Menu</a>
+        <a href="#experience" class="nav__link">Expérience</a>
+        <a href="#chef" class="nav__link">Le Chef</a>
+        <a href="#salle" class="nav__link">La Salle</a>
+        <a href="#reservation" class="nav__link nav__link--cta">Réserver</a>
+      </div>
+      <button class="nav__burger" id="nav-burger" aria-controls="nav-dialog" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+        <span class="nav__burger-line"></span>
+        <span class="nav__burger-line"></span>
+        <span class="nav__burger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menu mobile -->
+  <dialog class="nav-dialog" id="nav-dialog" aria-label="Menu de navigation mobile">
+    <button class="nav-dialog__close" id="nav-dialog-close" aria-label="Fermer le menu">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <nav aria-label="Navigation mobile">
+      <ul class="nav-dialog__list" role="list">
+        <li><a href="#concept" class="nav-dialog__link">Concept</a></li>
+        <li><a href="#menu" class="nav-dialog__link">Menu</a></li>
+        <li><a href="#experience" class="nav-dialog__link">Expérience</a></li>
+        <li><a href="#chef" class="nav-dialog__link">Le Chef</a></li>
+        <li><a href="#salle" class="nav-dialog__link">La Salle</a></li>
+        <li><a href="#presse" class="nav-dialog__link">Presse</a></li>
+        <li><a href="#reservation" class="nav-dialog__link nav-dialog__link--cta">Réserver une table</a></li>
+      </ul>
+    </nav>
+  </dialog>
+
+  <main id="contenu-principal">
+
+    <!-- Section 1 : Hero -->
+    <header class="hero" id="hero" aria-label="Umami Protocol — Accueil">
+      <div class="hero__particles" aria-hidden="true">
+        <!-- Particules générées par JS -->
+      </div>
+      <div class="hero__content">
+        <p class="hero__surtitre reveal-char" aria-hidden="true">東京 · パリ · バルセロナ</p>
+        <h1 class="hero__titre">
+          <span class="hero__titre-line" id="titre-line-1">Umami</span>
+          <span class="hero__titre-line" id="titre-line-2">Protocol</span>
+        </h1>
+        <p class="hero__tagline">Là où la mémoire gustative rencontre la réaction chimique.</p>
+        <a href="#reservation" class="hero__cta">Réserver une table</a>
+      </div>
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+      </div>
+    </header>
+
+    <!-- Section 2 : Concept -->
+    <section class="concept" id="concept" aria-labelledby="concept-titre">
+      <div class="concept__inner">
+        <div class="concept__header reveal">
+          <span class="section-label">— Le Concept</span>
+          <h2 class="section-titre" id="concept-titre">Une archéologie du goût</h2>
+          <div class="ligne-or" aria-hidden="true"></div>
+        </div>
+        <div class="concept__corps">
+          <div class="concept__col-gauche reveal">
+            <p class="concept__lettre-capitale">
+              <span class="concept__capital">I</span>l existe dans la tradition culinaire japonaise une notion que les traductions ne parviennent pas à saisir entièrement : le <em>ma</em>, cet espace-temps suspendu entre deux instants, entre deux saveurs. C'est dans cet interstice que Kenji Mori a choisi de travailler.
+            </p>
+            <p>
+              Formé à l'école kaiseki de Kyoto, passé par les brigades de Pierre Gagnaire à Paris et de Ferran Adrià à Barcelone avant la fermeture d'elBulli, Kenji a développé une langue culinaire personnelle, à la frontière exacte entre la rigueur ancestrale et la curiosité scientifique.
+            </p>
+            <p>
+              Chaque plat naît d'une question posée à la matière. Que se passe-t-il lorsque le dashi rencontre la lécithine de soja ? Quelle est la texture exacte d'un souvenir gustatif ? Comment la fermentation transforme-t-elle non seulement la saveur, mais l'identité d'un ingrédient ?
+            </p>
+          </div>
+          <div class="concept__col-droite reveal">
+            <p>
+              <em>Umami Protocol</em> n'est pas un restaurant de cuisine moléculaire au sens spectaculaire du terme. Pas de fumées de scène ni de gadgets. Ici, la technique est invisible. Elle est au service d'une seule ambition : rendre perceptible ce qui échappe normalement à la conscience — la structure profonde d'un goût, l'architecture cachée d'un arôme.
+            </p>
+            <p>
+              Le menu dégustation en sept services suit la logique d'une partition musicale. Chaque séquence prépare la suivante, chaque accord est calculé pour activer une zone précise de la mémoire sensorielle. Le repas ne commence pas à l'entrée. Il commence dans le silence qui précède le premier plat.
+            </p>
+            <blockquote class="concept__citation">
+              <p>"La cuisine moléculaire m'intéresse non comme fin, mais comme outil de précision. Je cherche à cuisiner ce que le palais ne peut pas encore nommer."</p>
+              <footer>— Kenji Mori</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 : Menu dégustation -->
+    <section class="menu" id="menu" aria-labelledby="menu-titre">
+      <div class="menu__inner">
+        <div class="menu__header reveal">
+          <span class="section-label">— Menu Dégustation</span>
+          <h2 class="section-titre" id="menu-titre">Sept services</h2>
+          <div class="ligne-or" aria-hidden="true"></div>
+          <p class="menu__prix">Menu unique · <strong>280 €</strong> par personne · Accords sake sur demande</p>
+        </div>
+        <ol class="menu__liste" role="list">
+
+          <li class="menu__plat reveal">
+            <div class="menu__plat-numero" aria-hidden="true">01</div>
+            <div class="menu__plat-contenu">
+              <div class="menu__plat-entete">
+                <h3 class="menu__plat-nom">Shizuku <span class="menu__plat-kanji" aria-hidden="true">雫</span></h3>
+                <span class="menu__plat-sous-titre">Sphérification d'eau de mer</span>
+              </div>
+              <div class="menu__plat-description">
+                <p>Une larme transparente de dashi de kombu à température du corps. Elle éclate en bouche en libérant une vague iodée longue et minérale. Sphérification inversée au chlorure de calcium. Précédée d'une feuille d'algue nori séchée à froid, réduite à son essence.</p>
+                <div class="menu__plat-technique">
+                  <span class="menu__technique-label">Technique</span>
+                  <span class="menu__technique-valeur">Sphérification inversée · Séchage cryogénique</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="menu__plat reveal">
+            <div class="menu__plat-numero" aria-hidden="true">02</div>
+            <div class="menu__plat-contenu">
+              <div class="menu__plat-entete">
+                <h3 class="menu__plat-nom">Kiri no Mori <span class="menu__plat-kanji" aria-hidden="true">霧の森</span></h3>
+                <span class="menu__plat-sous-titre">Brume de forêt, huile de cèdre japonais</span>
+              </div>
+              <div class="menu__plat-description">
+                <p>Un consommé de champignons matsutake servi sous une cloche de verre. À l'ouverture, un nuage aromatique d'huile essentielle de hinoki s'échappe. Le bouillon, clarifié par émulsion froide à la méthylcellulose, révèle une transparence absolue malgré sa densité en goût.</p>
+                <div class="menu__plat-technique">
+                  <span class="menu__technique-label">Technique</span>
+                  <span class="menu__technique-valeur">Émulsion froide · Infusion sous vide 72h</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="menu__plat reveal">
+            <div class="menu__plat-numero" aria-hidden="true">03</div>
+            <div class="menu__plat-contenu">
+              <div class="menu__plat-entete">
+                <h3 class="menu__plat-nom">Tobiuo no Yume <span class="menu__plat-kanji" aria-hidden="true">飛魚の夢</span></h3>
+                <span class="menu__plat-sous-titre">Rêve de poisson volant, gel de yuzu</span>
+              </div>
+              <div class="menu__plat-description">
+                <p>Fines tranches de poisson volant vieilli 48 heures à sec, posées sur un gel de yuzu fermenté et une base de riz vinaigré à l'acidité maîtrisée. La texture du gel — ferme en surface, liquide au centre — joue sur la désorientation sensorielle. Finition de fleur de sel des îles Goto.</p>
+                <div class="menu__plat-technique">
+                  <span class="menu__technique-label">Technique</span>
+                  <span class="menu__technique-valeur">Gélification agar-agar · Vieillissement à sec · Fermentation lactique</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="menu__plat reveal">
+            <div class="menu__plat-numero" aria-hidden="true">04</div>
+            <div class="menu__plat-contenu">
+              <div class="menu__plat-entete">
+                <h3 class="menu__plat-nom">Kuro Tsuchi <span class="menu__plat-kanji" aria-hidden="true">黒土</span></h3>
+                <span class="menu__plat-sous-titre">Terre noire, truffe blanche du Périgord</span>
+              </div>
+              <div class="menu__plat-description">
+                <p>Un bol de terre comestible — charbon de bambou, miso vieux trois ans, poudre de bois de chêne grillé — dissimule dessous un velouté de champignons shimeji et de truffe blanche du Périgord. La truffe est râpée à table, dans le silence. Déconstruction de la notion de profondeur.</p>
+                <div class="menu__plat-technique">
+                  <span class="menu__technique-label">Technique</span>
+                  <span class="menu__technique-valeur">Poudre de Maltosec · Déshydratation · Cuisson basse température 58°C</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="menu__plat reveal">
+            <div class="menu__plat-numero" aria-hidden="true">05</div>
+            <div class="menu__plat-contenu">
+              <div class="menu__plat-entete">
+                <h3 class="menu__plat-nom">Shōgun no Bara <span class="menu__plat-kanji" aria-hidden="true">将軍の薔薇</span></h3>
+                <span class="menu__plat-sous-titre">Rose du Shogun, wagyu A5 et sakura</span>
+              </div>
+              <div class="menu__plat-description">
+                <p>Pièce de bœuf wagyu Miyazaki grade A5, cuite sous vide à 52°C pendant six heures. Posée sur une purée de pétales de sakura confits, entourée d'une sauce tare déconstruite en perles de tapioca noir. La fleur est comestible, le marbré du bœuf visible comme une cartographie de graisse parfaite.</p>
+                <div class="menu__plat-technique">
+                  <span class="menu__technique-label">Technique</span>
+                  <span class="menu__technique-valeur">Cuisson sous vide · Sphérification basique · Confit cryogénique</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="menu__plat reveal">
+            <div class="menu__plat-numero" aria-hidden="true">06</div>
+            <div class="menu__plat-contenu">
+              <div class="menu__plat-entete">
+                <h3 class="menu__plat-nom">Tsuki no Kage <span class="menu__plat-kanji" aria-hidden="true">月の影</span></h3>
+                <span class="menu__plat-sous-titre">Ombre de lune, sorbet au saké et azote liquide</span>
+              </div>
+              <div class="menu__plat-description">
+                <p>Pré-dessert. Un disque opalin de sorbet au saké junmai daiginjo, fabriqué à vue dans un bol de pierre par turbinage à l'azote liquide. La fumée blanche s'étend sur la table. Le sorbet, servi à -12°C, fond en une texture laiteuse et florale. Accompagné d'un fine couche de cristaux de wasabi doux.</p>
+                <div class="menu__plat-technique">
+                  <span class="menu__technique-label">Technique</span>
+                  <span class="menu__technique-valeur">Turbinage à l'azote liquide · Cristallisation contrôlée</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="menu__plat reveal">
+            <div class="menu__plat-numero" aria-hidden="true">07</div>
+            <div class="menu__plat-contenu">
+              <div class="menu__plat-entete">
+                <h3 class="menu__plat-nom">Ma <span class="menu__plat-kanji" aria-hidden="true">間</span></h3>
+                <span class="menu__plat-sous-titre">Le silence, chocolat de couverture et thé matcha ceremonial</span>
+              </div>
+              <div class="menu__plat-description">
+                <p>Fin du repas. Pas un dessert mais une conclusion. Un carré de chocolat noir 72% infusé au thé matcha cérémonial de Uji, servi sur une feuille de bambou. À côté, une tasse de matcha préparé selon le rite chanoyu, en silence, par le chef lui-même devant chaque convive. Le repas se referme comme il s'est ouvert.</p>
+                <div class="menu__plat-technique">
+                  <span class="menu__technique-label">Technique</span>
+                  <span class="menu__technique-valeur">Tempérage précis · Infusion à 65°C · Cérémonie chanoyu</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ol>
+        <p class="menu__note reveal">Menu disponible du mardi au samedi, service unique à partir de 19h30. Allergènes et régimes alimentaires : nous contacter lors de la réservation.</p>
+      </div>
+    </section>
+
+    <!-- Section 4 : Expérience -->
+    <section class="experience" id="experience" aria-labelledby="experience-titre">
+      <div class="experience__inner">
+        <div class="experience__header reveal">
+          <span class="section-label">— L'Expérience</span>
+          <h2 class="section-titre" id="experience-titre">Les rituels</h2>
+          <div class="ligne-or" aria-hidden="true"></div>
+        </div>
+        <div class="experience__grille">
+
+          <article class="experience__bloc reveal" aria-labelledby="exp-1-titre">
+            <div class="experience__visuel experience__visuel--entree" aria-hidden="true">
+              <div class="experience__visuel-forme" aria-hidden="true"></div>
+            </div>
+            <div class="experience__texte">
+              <h3 class="experience__bloc-titre" id="exp-1-titre">L'arrivée</h3>
+              <p>On descend trois marches. La porte en bois de paulownia s'ouvre vers l'intérieur. Un assistant vous débarrasse de votre manteau en silence. Le premier contact olfactif est calculé : une légère fumée de bois de cèdre japonais, à peine perceptible, active les récepteurs de la mémoire olfactive avant même d'atteindre la table.</p>
+            </div>
+          </article>
+
+          <article class="experience__bloc reveal" aria-labelledby="exp-2-titre">
+            <div class="experience__visuel experience__visuel--plat" aria-hidden="true">
+              <div class="experience__visuel-forme" aria-hidden="true"></div>
+            </div>
+            <div class="experience__texte">
+              <h3 class="experience__bloc-titre" id="exp-2-titre">La mise en scène du plat</h3>
+              <p>Chaque assiette est déposée en silence. Le serveur attend que le convive la regarde entièrement avant de prononcer les trois mots nécessaires — le nom du plat, en japonais, puis en français — et de se retirer. Aucune description spontanée. Le menu écrit, calligraphié à la main chaque soir, contient tout ce dont vous avez besoin.</p>
+            </div>
+          </article>
+
+          <article class="experience__bloc reveal" aria-labelledby="exp-3-titre">
+            <div class="experience__visuel experience__visuel--sake" aria-hidden="true">
+              <div class="experience__visuel-forme" aria-hidden="true"></div>
+            </div>
+            <div class="experience__texte">
+              <h3 class="experience__bloc-titre" id="exp-3-titre">Les accords sake moléculaires</h3>
+              <p>Le sommelier Yuki Hashimoto a développé une carte de sake pensée comme une extension du menu. Certains accords jouent sur les contrastes : un junmai très acide face à la rondeur du wagyu. D'autres sur la résonance : un nigori non filtré dont les levures actives dialoguent avec la fermentation du miso vieux. Six sakes, en formats 60ml, pour accompagner les sept services.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5 : Le Chef -->
+    <section class="chef" id="chef" aria-labelledby="chef-titre">
+      <div class="chef__inner">
+        <div class="chef__portrait-zone reveal" aria-hidden="true">
+          <div class="chef__portrait-cadre">
+            <div class="chef__portrait-placeholder">
+              <img src="portrait-chef.jpg" alt="Portrait du chef Kenji Mori" class="chef__portrait-img" loading="lazy" />
+              <div class="chef__portrait-shimmer"></div>
+            </div>
+            <div class="chef__portrait-ombre" aria-hidden="true"></div>
+          </div>
+          <div class="chef__portrait-label" aria-hidden="true">Kenji Mori · Chef Patron</div>
+        </div>
+        <div class="chef__biographie">
+          <div class="chef__header reveal">
+            <span class="section-label">— Le Chef</span>
+            <h2 class="section-titre" id="chef-titre">Kenji Mori</h2>
+            <div class="ligne-or" aria-hidden="true"></div>
+          </div>
+          <div class="chef__texte reveal">
+            <p>Né à Osaka en 1979, Kenji Mori grandit dans la cuisine de son père, propriétaire d'un izakaya dans le quartier de Shinsekai. À quinze ans, il convainc sa mère de l'inscrire dans la brigade du restaurant kaiseki Kikunoi à Kyoto, sous la direction du maître Kunio Tokuoka. Il y passe sept ans à maîtriser les fondamentaux de la cuisine de saison japonaise : la lecture du produit, la maîtrise du couteau, la compréhension du feu.</p>
+            <p>En 2004, il rejoint Paris et entre chez Pierre Gagnaire rue Balzac. C'est là qu'il découvre la pensée scientifique appliquée à la cuisine, sous l'influence du physicien Hervé This qui collaborait alors avec Gagnaire. Deux ans plus tard, il est recruté comme chef de partie chez elBulli à Roses, en Catalogne. Il travaille aux côtés de Ferran Adrià pendant trois saisons consécutives, de 2006 à 2010, jusqu'à la fermeture du restaurant.</p>
+            <p>De retour à Tokyo en 2011, il ouvre un premier comptoir de dix couverts à Nakameguro qui reçoit une étoile Michelin en 2013. En 2018, il choisit Paris pour son projet le plus abouti : <em>Umami Protocol</em>, rue du Bac, dix-huit couverts, un seul menu, aucune carte.</p>
+          </div>
+          <div class="chef__distinctions reveal">
+            <div class="chef__distinction">
+              <span class="chef__distinction-annee">2013</span>
+              <span class="chef__distinction-texte">1 étoile Michelin — Tokyo, Nakameguro</span>
+            </div>
+            <div class="chef__distinction">
+              <span class="chef__distinction-annee">2020</span>
+              <span class="chef__distinction-texte">1 étoile Michelin — Paris, Umami Protocol</span>
+            </div>
+            <div class="chef__distinction">
+              <span class="chef__distinction-annee">2022</span>
+              <span class="chef__distinction-texte">2 étoiles Michelin — Paris, Umami Protocol</span>
+            </div>
+            <div class="chef__distinction">
+              <span class="chef__distinction-annee">2024</span>
+              <span class="chef__distinction-texte">OAD Top 50 Europe — #12</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6 : La Salle -->
+    <section class="salle" id="salle" aria-labelledby="salle-titre">
+      <div class="salle__inner">
+        <div class="salle__header reveal">
+          <span class="section-label">— La Salle</span>
+          <h2 class="section-titre" id="salle-titre">L'espace</h2>
+          <div class="ligne-or" aria-hidden="true"></div>
+        </div>
+        <div class="salle__grille">
+
+          <figure class="salle__visuel salle__visuel--comptoir reveal" aria-labelledby="salle-1-titre">
+            <div class="salle__image salle__image--comptoir">
+              <img src="salle-comptoir.jpg" alt="Le comptoir face à la cuisine ouverte d'Umami Protocol" class="salle__img" loading="lazy" />
+              <div class="salle__image-overlay" aria-hidden="true"></div>
+            </div>
+            <figcaption class="salle__legende" id="salle-1-titre">
+              <h3>Le comptoir</h3>
+              <p>Six places face à la cuisine ouverte. Vue directe sur les gestes du chef et de sa brigade de quatre personnes. L'espace le plus intense du restaurant.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="salle__visuel salle__visuel--salle reveal" aria-labelledby="salle-2-titre">
+            <div class="salle__image salle__image--salle">
+              <img src="salle-intime.jpg" alt="La salle principale intime d'Umami Protocol" class="salle__img" loading="lazy" />
+              <div class="salle__image-overlay" aria-hidden="true"></div>
+            </div>
+            <figcaption class="salle__legende" id="salle-2-titre">
+              <h3>La salle principale</h3>
+              <p>Douze couverts répartis en six tables pour deux. Bois de noyer, cuir naturel non teint, pierre de Bourgogne. Acoustique travaillée pour que les conversations restent intimes malgré la proximité des tables.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="salle__visuel salle__visuel--prive reveal" aria-labelledby="salle-3-titre">
+            <div class="salle__image salle__image--prive">
+              <img src="salle-privee.jpg" alt="La table privée d'Umami Protocol" class="salle__img" loading="lazy" />
+              <div class="salle__image-overlay" aria-hidden="true"></div>
+            </div>
+            <figcaption class="salle__legende" id="salle-3-titre">
+              <h3>La table privée</h3>
+              <p>Une table unique en sous-sol, pour deux à six personnes. Accessible sur demande exclusivement. Service dédié, menu personnalisé, accords sake conçus spécifiquement pour la soirée.</p>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7 : Presse -->
+    <section class="presse" id="presse" aria-labelledby="presse-titre">
+      <div class="presse__inner">
+        <div class="presse__header reveal">
+          <span class="section-label">— Presse</span>
+          <h2 class="section-titre" id="presse-titre">Ce que l'on dit</h2>
+          <div class="ligne-or" aria-hidden="true"></div>
+        </div>
+        <div class="presse__grille">
+
+          <blockquote class="presse__citation reveal" aria-labelledby="presse-1-source">
+            <p>"Umami Protocol réussit ce que peu de restaurants au monde parviennent à faire : rendre la science poétique. Chaque service est une thèse sur la perception. Kenji Mori est l'un des esprits culinaires les plus sérieux de sa génération."</p>
+            <footer>
+              <span class="presse__source" id="presse-1-source">Le Monde</span>
+              <div class="presse__etoiles" aria-label="5 étoiles sur 5" role="img">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="presse__citation reveal" aria-labelledby="presse-2-source">
+            <p>"On ne mange pas ici, on traverse une expérience. Le menu est une partition en sept mouvements dont on sort légèrement changé. La carte de sake de Yuki Hashimoto est peut-être la plus cohérente de Paris."</p>
+            <footer>
+              <span class="presse__source" id="presse-2-source">Le Fooding</span>
+              <div class="presse__etoiles" aria-label="5 étoiles sur 5" role="img">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="presse__citation reveal" aria-labelledby="presse-3-source">
+            <p>"Dans un paysage gastronomique parisien souvent bruyant, Umami Protocol cultive un silence rare et précieux. Les techniques moléculaires ne sont jamais des fins en soi — elles servent une vision du goût à la fois méticuleuse et profondément humaine."</p>
+            <footer>
+              <span class="presse__source" id="presse-3-source">Le Figaro</span>
+              <div class="presse__score" aria-label="Score 19 sur 20">
+                <span aria-hidden="true">19<small>/20</small></span>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8 : Réservation -->
+    <section class="reservation" id="reservation" aria-labelledby="reservation-titre">
+      <div class="reservation__inner">
+        <div class="reservation__header reveal">
+          <span class="section-label">— Réservation</span>
+          <h2 class="section-titre" id="reservation-titre">Réserver une table</h2>
+          <div class="ligne-or" aria-hidden="true"></div>
+          <p class="reservation__note">Service uniquement le soir, du mardi au samedi. 18 couverts maximum. Le menu dégustation est le seul menu proposé.</p>
+        </div>
+        <form class="reservation__form reveal" action="#" method="post" aria-label="Formulaire de réservation">
+          <div class="form__groupe">
+            <label class="form__label" for="res-nom">Nom complet</label>
+            <input class="form__input" type="text" id="res-nom" name="nom" autocomplete="name" required aria-required="true" placeholder="Votre nom" />
+          </div>
+          <div class="form__groupe">
+            <label class="form__label" for="res-email">Adresse e-mail</label>
+            <input class="form__input" type="email" id="res-email" name="email" autocomplete="email" required aria-required="true" placeholder="votre@email.com" />
+          </div>
+          <div class="form__groupe">
+            <label class="form__label" for="res-telephone">Téléphone</label>
+            <input class="form__input" type="tel" id="res-telephone" name="telephone" autocomplete="tel" placeholder="+33 6 00 00 00 00" />
+          </div>
+          <div class="form__ligne">
+            <div class="form__groupe">
+              <label class="form__label" for="res-date">Date souhaitée</label>
+              <input class="form__input" type="date" id="res-date" name="date" required aria-required="true" />
+            </div>
+            <div class="form__groupe">
+              <label class="form__label" for="res-heure">Heure</label>
+              <select class="form__input form__select" id="res-heure" name="heure" required aria-required="true">
+                <option value="" disabled selected>Choisir</option>
+                <option value="19:30">19h30</option>
+                <option value="20:00">20h00</option>
+              </select>
+            </div>
+            <div class="form__groupe">
+              <label class="form__label" for="res-couverts">Couverts</label>
+              <select class="form__input form__select" id="res-couverts" name="couverts" required aria-required="true">
+                <option value="" disabled selected>Nombre</option>
+                <option value="1">1 personne</option>
+                <option value="2">2 personnes</option>
+                <option value="3">3 personnes</option>
+                <option value="4">4 personnes</option>
+                <option value="5">5 personnes</option>
+                <option value="6">6 personnes</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__groupe">
+            <label class="form__label" for="res-regimes">Régimes alimentaires et allergènes</label>
+            <textarea class="form__input form__textarea" id="res-regimes" name="regimes" rows="3" placeholder="Végétarien, allergie aux crustacés, halal, sans gluten..."></textarea>
+          </div>
+          <div class="form__groupe">
+            <label class="form__label" for="res-message">Message (facultatif)</label>
+            <textarea class="form__input form__textarea" id="res-message" name="message" rows="3" placeholder="Occasion particulière, demande spécifique, table privée..."></textarea>
+          </div>
+          <button class="form__submit" type="submit">Envoyer la demande de réservation</button>
+          <p class="form__mention">Toute demande fait l'objet d'une confirmation par e-mail dans les 24 heures. La réservation n'est définitive qu'après cette confirmation.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__logo" aria-label="Umami Protocol">
+        <span class="footer__kanji" aria-hidden="true">旨</span>
+        <span class="footer__nom">Umami Protocol</span>
+      </div>
+      <div class="footer__infos">
+        <address class="footer__adresse">
+          12 rue du Bac · 75007 Paris<br />
+          <a href="tel:+33145678900" class="footer__tel">+33 (0)1 45 67 89 00</a>
+        </address>
+        <p class="footer__horaires">Mardi — Samedi · Dîner uniquement · 19h30</p>
+      </div>
+      <p class="footer__copy">&copy; 2025 Umami Protocol. Site de démonstration — NTMG Portfolio.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Iron District — Salle de sport Lyon 3e. 850 membres, 12 ans d'existence, 400m². Musculation, cardio, cours collectifs. Essai gratuit 7 jours." />
+  <title>Iron District — Forge ton propre acier</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip link accessibilite -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Iron District — retour en haut">
+        <span class="nav-logo-text">IRON</span>
+        <span class="nav-logo-accent">DISTRICT</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">À propos</a></li>
+        <li><a href="#equipements" class="nav-link">Équipements</a></li>
+        <li><a href="#cours" class="nav-link">Cours</a></li>
+        <li><a href="#coaches" class="nav-link">Coaches</a></li>
+        <li><a href="#abonnements" class="nav-link">Abonnements</a></li>
+        <li><a href="#temoignages" class="nav-link">Avis</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="#abonnements" class="btn btn--nav">Essai gratuit</a>
+
+      <button class="nav-burger" aria-controls="nav-mobile" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MENU MOBILE -->
+  <dialog class="nav-mobile" id="nav-mobile" aria-label="Menu de navigation mobile">
+    <button class="nav-mobile-close" aria-label="Fermer le menu">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <nav aria-label="Navigation mobile">
+      <ul role="list" class="nav-mobile-links">
+        <li><a href="#about" class="nav-mobile-link">À propos</a></li>
+        <li><a href="#equipements" class="nav-mobile-link">Équipements</a></li>
+        <li><a href="#cours" class="nav-mobile-link">Cours</a></li>
+        <li><a href="#coaches" class="nav-mobile-link">Coaches</a></li>
+        <li><a href="#abonnements" class="nav-mobile-link">Abonnements</a></li>
+        <li><a href="#temoignages" class="nav-mobile-link">Avis membres</a></li>
+        <li><a href="#contact" class="nav-mobile-link">Contact</a></li>
+      </ul>
+      <a href="#abonnements" class="btn btn--primary btn--full nav-mobile-cta">Essai gratuit 7 jours</a>
+    </nav>
+  </dialog>
+
+  <main id="main-content">
+
+    <!-- ============================================================ -->
+    <!-- SECTION 1 — HERO -->
+    <!-- ============================================================ -->
+    <header id="hero" class="hero" aria-label="Présentation Iron District">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="hero-salle.jpg" alt="Salle Iron District — ambiance industrielle" class="hero-bg-img" loading="eager" fetchpriority="high" />
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="hero-gradient" aria-hidden="true"></div>
+        <div class="hero-lines" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">Lyon 3e — Depuis 2012</p>
+        <h1 class="hero-title">
+          <span class="hero-title-main">IRON</span>
+          <span class="hero-title-accent">DISTRICT</span>
+        </h1>
+        <p class="hero-tagline">Forge ton propre acier.</p>
+        <p class="hero-sub">La salle de sport du quartier qui ne fait pas semblant. Pas de miroirs dorés, pas de musique de centre commercial. Juste du travail, de la sueur et une vraie communauté.</p>
+
+        <div class="hero-actions">
+          <a href="#abonnements" class="btn btn--primary btn--pulse">Essai gratuit 7 jours</a>
+          <a href="#about" class="btn btn--ghost">Découvrir la salle</a>
+        </div>
+
+        <div class="hero-stats" aria-label="Chiffres clés">
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-target="850" aria-label="850 membres actifs">0</span>
+            <span class="hero-stat-label">Membres actifs</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-target="12" aria-label="12 ans d'existence">0</span>
+            <span class="hero-stat-label">Ans d'existence</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-target="400" aria-label="400 m2 de surface">0</span>
+            <span class="hero-stat-label">M² de surface</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-target="18" aria-label="18 cours par semaine">0</span>
+            <span class="hero-stat-label">Cours / semaine</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span class="scroll-line"></span>
+      </div>
+    </header>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2 — A PROPOS -->
+    <!-- ============================================================ -->
+    <section id="about" class="section section--dark" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <div class="section-tag">Notre histoire</div>
+          <h2 class="section-title" id="about-title">Pas une franchise. Une institution de quartier.</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-visual reveal-item" aria-hidden="true">
+            <div class="about-visual-block about-visual-block--main">
+              <div class="visual-label">2012</div>
+              <div class="visual-sublabel">Fondation</div>
+            </div>
+            <div class="about-visual-block about-visual-block--secondary">
+              <div class="visual-label">Lyon 3</div>
+              <div class="visual-sublabel">Rue Garibaldi</div>
+            </div>
+            <div class="about-accent-line" aria-hidden="true"></div>
+          </div>
+
+          <div class="about-content reveal-item">
+            <p class="about-text about-text--lead">Iron District a ouvert ses portes en 2012 dans un ancien entrepôt de la Rue Garibaldi. Pas de crédit bancaire à rembourser sur du chrome et de la mousse. Juste des équipements sérieux, des coaches qui savent de quoi ils parlent, et des membres qui reviennent.</p>
+            <p class="about-text">On a vu des centaines d'abonnements ouverts à 6h30 du matin et fermés le soir à 22h. On a vu des gens commencer à 80 kg de trop et finir sur un podium régional. On a vu des mères de famille reprendre confiance en elles. C'est ça, Iron District.</p>
+            <p class="about-text">La salle n'appartient pas à un groupe. Elle appartient à ceux qui viennent s'y entraîner.</p>
+
+            <div class="about-values">
+              <div class="about-value">
+                <div class="about-value-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="about-value-title">Communauté</h3>
+                  <p class="about-value-desc">Ici, tout le monde connaît ton prénom au bout de deux séances.</p>
+                </div>
+              </div>
+              <div class="about-value">
+                <div class="about-value-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="about-value-title">Performance</h3>
+                  <p class="about-value-desc">Des équipements professionnels, un encadrement sérieux, des résultats réels.</p>
+                </div>
+              </div>
+              <div class="about-value">
+                <div class="about-value-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="about-value-title">Authenticité</h3>
+                  <p class="about-value-desc">Pas de vente forcée, pas de coaching nutritionnel surfacturé. Juste de la transparence.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-counters">
+          <div class="counter-card reveal-item">
+            <span class="counter-number" data-target="850">0</span>
+            <span class="counter-suffix">+</span>
+            <span class="counter-label">Membres actifs</span>
+          </div>
+          <div class="counter-card reveal-item">
+            <span class="counter-number" data-target="12">0</span>
+            <span class="counter-suffix">ans</span>
+            <span class="counter-label">D'expérience locale</span>
+          </div>
+          <div class="counter-card reveal-item">
+            <span class="counter-number" data-target="400">0</span>
+            <span class="counter-suffix">m²</span>
+            <span class="counter-label">D'espace d'entraînement</span>
+          </div>
+          <div class="counter-card reveal-item">
+            <span class="counter-number" data-target="98">0</span>
+            <span class="counter-suffix">%</span>
+            <span class="counter-label">De membres satisfaits</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 3 — EQUIPEMENTS -->
+    <!-- ============================================================ -->
+    <section id="equipements" class="section section--charcoal" aria-labelledby="equipements-title">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <div class="section-tag">Infrastructure</div>
+          <h2 class="section-title" id="equipements-title">Quatre zones. Un seul objectif.</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+          <p class="section-subtitle">Des équipements choisis pour durer, pas pour impressionner les commerciaux.</p>
+        </div>
+
+        <div class="equipment-grid">
+
+          <article class="equipment-card reveal-item" aria-labelledby="equip-muscu">
+            <div class="equipment-visual equipment-visual--muscu">
+              <img src="zone-muscu.jpg" alt="Zone musculation Iron District" class="equipment-visual-img" loading="lazy" />
+              <div class="equip-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M6.5 6.5h11"/>
+                  <path d="M6.5 17.5h11"/>
+                  <path d="M3 9v6"/>
+                  <path d="M21 9v6"/>
+                  <path d="M4.5 7.5v9"/>
+                  <path d="M19.5 7.5v9"/>
+                  <rect x="2" y="8" width="3" height="8" rx="1"/>
+                  <rect x="19" y="8" width="3" height="8" rx="1"/>
+                </svg>
+              </div>
+              <div class="equip-number" aria-hidden="true">01</div>
+            </div>
+            <div class="equipment-card-body">
+              <h3 class="equipment-card-title" id="equip-muscu">Musculation</h3>
+              <p class="equipment-card-desc">50 postes de musculation avec bancs réglables, barres olympiques, haltères de 2 à 50 kg, racks de squat, stations câbles. Matériel Hammer Strength et Precor.</p>
+              <ul class="equipment-list" role="list">
+                <li>12 barres olympiques 20 kg</li>
+                <li>Rack de squat x6</li>
+                <li>Presse à cuisse professionnelle</li>
+                <li>Station fonctionnelle multi-postes</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="equipment-card reveal-item" aria-labelledby="equip-cardio">
+            <div class="equipment-visual equipment-visual--cardio">
+              <img src="zone-cardio.jpg" alt="Zone cardio Iron District" class="equipment-visual-img" loading="lazy" />
+              <div class="equip-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg>
+              </div>
+              <div class="equip-number" aria-hidden="true">02</div>
+            </div>
+            <div class="equipment-card-body">
+              <h3 class="equipment-card-title" id="equip-cardio">Cardio</h3>
+              <p class="equipment-card-desc">Zone cardio de 120m² avec tapis de course, vélos, elliptiques et rameurs professionnels. Écrans intégrés, connexion Bluetooth, suivi de fréquence cardiaque.</p>
+              <ul class="equipment-list" role="list">
+                <li>20 tapis de course Technogym</li>
+                <li>12 vélos elliptiques</li>
+                <li>8 rameurs Concept2</li>
+                <li>6 vélos spinning</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="equipment-card reveal-item" aria-labelledby="equip-cours">
+            <div class="equipment-visual equipment-visual--cours">
+              <img src="zone-cours.jpg" alt="Salle de cours collectifs Iron District" class="equipment-visual-img" loading="lazy" />
+              <div class="equip-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div class="equip-number" aria-hidden="true">03</div>
+            </div>
+            <div class="equipment-card-body">
+              <h3 class="equipment-card-title" id="equip-cours">Cours collectifs</h3>
+              <p class="equipment-card-desc">Salle dédiée de 80m² avec parquet flottant, sono professionnelle, miroirs pleine hauteur, ventilation renforcée. Capacité 20 personnes par cours.</p>
+              <ul class="equipment-list" role="list">
+                <li>Parquet flottant amortissant</li>
+                <li>Punching-bags suspendus x8</li>
+                <li>Matériel CrossFit complet</li>
+                <li>Tapis de yoga et mousse</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="equipment-card reveal-item" aria-labelledby="equip-vestiaires">
+            <div class="equipment-visual equipment-visual--vestiaires">
+              <img src="zone-vestiaires.jpg" alt="Vestiaires premium Iron District" class="equipment-visual-img" loading="lazy" />
+              <div class="equip-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+              <div class="equip-number" aria-hidden="true">04</div>
+            </div>
+            <div class="equipment-card-body">
+              <h3 class="equipment-card-title" id="equip-vestiaires">Vestiaires premium</h3>
+              <p class="equipment-card-desc">Vestiaires séparés hommes et femmes avec casiers sécurisés à code, douches individuelles, sèche-cheveux, espace de rangement personnel.</p>
+              <ul class="equipment-list" role="list">
+                <li>80 casiers sécurisés</li>
+                <li>12 douches individuelles</li>
+                <li>Produits de soin fournis</li>
+                <li>Serviettes disponibles à l'accueil</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 4 — COURS & PLANNING -->
+    <!-- ============================================================ -->
+    <section id="cours" class="section section--dark" aria-labelledby="cours-title">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <div class="section-tag">Planning hebdomadaire</div>
+          <h2 class="section-title" id="cours-title">18 cours par semaine. Aucune excuse.</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+          <p class="section-subtitle">Cours inclus dans toutes les formules d'abonnement.</p>
+        </div>
+
+        <div class="planning-legend reveal-item" aria-label="Légende des types de cours">
+          <div class="legend-item"><span class="legend-dot legend-dot--crossfit"></span>CrossFit</div>
+          <div class="legend-item"><span class="legend-dot legend-dot--boxe"></span>Boxe</div>
+          <div class="legend-item"><span class="legend-dot legend-dot--yoga"></span>Yoga</div>
+          <div class="legend-item"><span class="legend-dot legend-dot--hiit"></span>HIIT</div>
+        </div>
+
+        <div class="planning-wrapper reveal-item">
+          <div class="planning-scroll-hint" aria-hidden="true">Faites défiler pour voir le planning complet</div>
+          <div class="planning-overflow">
+            <table class="planning-table" aria-label="Planning des cours de la semaine">
+              <thead>
+                <tr>
+                  <th scope="col" class="planning-th planning-th--time">Horaire</th>
+                  <th scope="col" class="planning-th">Lundi</th>
+                  <th scope="col" class="planning-th">Mardi</th>
+                  <th scope="col" class="planning-th">Mercredi</th>
+                  <th scope="col" class="planning-th">Jeudi</th>
+                  <th scope="col" class="planning-th">Vendredi</th>
+                  <th scope="col" class="planning-th">Samedi</th>
+                  <th scope="col" class="planning-th">Dimanche</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="planning-row">
+                  <th scope="row" class="planning-time">07h00</th>
+                  <td class="planning-cell planning-cell--crossfit">
+                    <span class="cours-badge">CrossFit</span>
+                    <span class="cours-coach">Marc D.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--empty"></td>
+                  <td class="planning-cell planning-cell--crossfit">
+                    <span class="cours-badge">CrossFit</span>
+                    <span class="cours-coach">Marc D.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--empty"></td>
+                  <td class="planning-cell planning-cell--crossfit">
+                    <span class="cours-badge">CrossFit</span>
+                    <span class="cours-coach">Marc D.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--empty"></td>
+                  <td class="planning-cell planning-cell--empty"></td>
+                </tr>
+                <tr class="planning-row">
+                  <th scope="row" class="planning-time">09h30</th>
+                  <td class="planning-cell planning-cell--yoga">
+                    <span class="cours-badge">Yoga</span>
+                    <span class="cours-coach">Sofia L.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--hiit">
+                    <span class="cours-badge">HIIT</span>
+                    <span class="cours-coach">Sofia L.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--yoga">
+                    <span class="cours-badge">Yoga</span>
+                    <span class="cours-coach">Sofia L.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--hiit">
+                    <span class="cours-badge">HIIT</span>
+                    <span class="cours-coach">Sofia L.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--yoga">
+                    <span class="cours-badge">Yoga</span>
+                    <span class="cours-coach">Sofia L.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--crossfit">
+                    <span class="cours-badge">CrossFit</span>
+                    <span class="cours-coach">Marc D.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--yoga">
+                    <span class="cours-badge">Yoga</span>
+                    <span class="cours-coach">Sofia L.</span>
+                  </td>
+                </tr>
+                <tr class="planning-row">
+                  <th scope="row" class="planning-time">12h00</th>
+                  <td class="planning-cell planning-cell--boxe">
+                    <span class="cours-badge">Boxe</span>
+                    <span class="cours-coach">Karim B.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--empty"></td>
+                  <td class="planning-cell planning-cell--boxe">
+                    <span class="cours-badge">Boxe</span>
+                    <span class="cours-coach">Karim B.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--empty"></td>
+                  <td class="planning-cell planning-cell--boxe">
+                    <span class="cours-badge">Boxe</span>
+                    <span class="cours-coach">Karim B.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--empty"></td>
+                  <td class="planning-cell planning-cell--empty"></td>
+                </tr>
+                <tr class="planning-row">
+                  <th scope="row" class="planning-time">18h30</th>
+                  <td class="planning-cell planning-cell--hiit">
+                    <span class="cours-badge">HIIT</span>
+                    <span class="cours-coach">Sofia L.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--crossfit">
+                    <span class="cours-badge">CrossFit</span>
+                    <span class="cours-coach">Marc D.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--boxe">
+                    <span class="cours-badge">Boxe</span>
+                    <span class="cours-coach">Karim B.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--hiit">
+                    <span class="cours-badge">HIIT</span>
+                    <span class="cours-coach">Sofia L.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--crossfit">
+                    <span class="cours-badge">CrossFit</span>
+                    <span class="cours-coach">Marc D.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--hiit">
+                    <span class="cours-badge">HIIT</span>
+                    <span class="cours-coach">Sofia L.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--empty"></td>
+                </tr>
+                <tr class="planning-row">
+                  <th scope="row" class="planning-time">20h00</th>
+                  <td class="planning-cell planning-cell--crossfit">
+                    <span class="cours-badge">CrossFit</span>
+                    <span class="cours-coach">Marc D.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--boxe">
+                    <span class="cours-badge">Boxe</span>
+                    <span class="cours-coach">Karim B.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--empty"></td>
+                  <td class="planning-cell planning-cell--crossfit">
+                    <span class="cours-badge">CrossFit</span>
+                    <span class="cours-coach">Marc D.</span>
+                  </td>
+                  <td class="planning-cell planning-cell--empty"></td>
+                  <td class="planning-cell planning-cell--empty"></td>
+                  <td class="planning-cell planning-cell--empty"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p class="planning-note reveal-item">Planning susceptible de changer selon les périodes. Abonnés notifiés par SMS 48h à l'avance.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 5 — COACHES -->
+    <!-- ============================================================ -->
+    <section id="coaches" class="section section--charcoal" aria-labelledby="coaches-title">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <div class="section-tag">L'équipe</div>
+          <h2 class="section-title" id="coaches-title">Des coaches. Pas des vendeurs.</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+          <p class="section-subtitle">Diplômés d'État, passionnés de terrain. Ils s'entraînent ici, comme vous.</p>
+        </div>
+
+        <div class="coaches-grid">
+
+          <article class="coach-card reveal-item" aria-labelledby="coach-marc">
+            <div class="coach-avatar coach-avatar--marc">
+              <img src="coach-marc.jpg" alt="Marc Dumont, coach CrossFit et Force athlétique" class="coach-avatar-img" loading="lazy" />
+            </div>
+            <div class="coach-body">
+              <h3 class="coach-name" id="coach-marc">Marc Dumont</h3>
+              <div class="coach-specialty">CrossFit &amp; Force athlétique</div>
+              <p class="coach-bio">BPJEPS + Level 2 CrossFit. 8 ans d'expérience en salle, ancien compétiteur régional de force athlétique. Spécialisé en remise en forme des 40+ et préparation physique générale.</p>
+              <div class="coach-tags">
+                <span class="coach-tag">CrossFit</span>
+                <span class="coach-tag">Force athlétique</span>
+                <span class="coach-tag">Remise en forme</span>
+              </div>
+              <div class="coach-schedule">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Lun, Mer, Ven — 7h à 13h &amp; 18h30 à 21h
+              </div>
+            </div>
+          </article>
+
+          <article class="coach-card reveal-item" aria-labelledby="coach-karim">
+            <div class="coach-avatar coach-avatar--karim">
+              <img src="coach-karim.jpg" alt="Karim Benali, coach Boxe anglaise et Arts martiaux" class="coach-avatar-img" loading="lazy" />
+            </div>
+            <div class="coach-body">
+              <h3 class="coach-name" id="coach-karim">Karim Benali</h3>
+              <div class="coach-specialty">Boxe anglaise &amp; Arts martiaux</div>
+              <p class="coach-bio">Moniteur fédéral de boxe anglaise (FFBoxe), ceinture noire de judo. 12 ans sur les tatamis, 5 ans de coaching en club et salle. Cours tous niveaux — du débutant au compétiteur.</p>
+              <div class="coach-tags">
+                <span class="coach-tag">Boxe</span>
+                <span class="coach-tag">Défense personnelle</span>
+                <span class="coach-tag">Cardio combat</span>
+              </div>
+              <div class="coach-schedule">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Mar, Jeu, Sam — 10h à 14h &amp; 19h à 21h
+              </div>
+            </div>
+          </article>
+
+          <article class="coach-card reveal-item" aria-labelledby="coach-sofia">
+            <div class="coach-avatar coach-avatar--sofia">
+              <img src="coach-sofia.jpg" alt="Sofia Leclerc, coach Yoga et HIIT" class="coach-avatar-img" loading="lazy" />
+            </div>
+            <div class="coach-body">
+              <h3 class="coach-name" id="coach-sofia">Sofia Leclerc</h3>
+              <div class="coach-specialty">Yoga &amp; HIIT</div>
+              <p class="coach-bio">BPJEPS AGFF + certification Yoga Alliance RYT-200. Ancienne athlète de haut niveau (triathlon). Spécialisée dans l'alliance performance et récupération, le bien-être par le mouvement, et la préparation mentale.</p>
+              <div class="coach-tags">
+                <span class="coach-tag">Yoga</span>
+                <span class="coach-tag">HIIT</span>
+                <span class="coach-tag">Récupération</span>
+              </div>
+              <div class="coach-schedule">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Lun–Ven 9h30–11h30, Mer–Sam 18h30–20h
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 6 — ABONNEMENTS -->
+    <!-- ============================================================ -->
+    <section id="abonnements" class="section section--dark" aria-labelledby="abonnements-title">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <div class="section-tag">Tarifs</div>
+          <h2 class="section-title" id="abonnements-title">Des prix honnêtes. Sans surprise.</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+          <p class="section-subtitle">Tous les abonnements incluent les cours collectifs, l'accès illimité aux équipements et aux vestiaires.</p>
+        </div>
+
+        <div class="pricing-grid">
+
+          <article class="pricing-card reveal-item" aria-labelledby="plan-mensuel">
+            <div class="pricing-card-header">
+              <div class="pricing-badge">Flexible</div>
+              <h3 class="pricing-name" id="plan-mensuel">Mensuel</h3>
+              <div class="pricing-price">
+                <span class="pricing-amount">39</span>
+                <span class="pricing-currency">€</span>
+                <span class="pricing-period">/mois</span>
+              </div>
+              <p class="pricing-desc">Sans engagement. Résiliable à tout moment.</p>
+            </div>
+            <ul class="pricing-features" role="list">
+              <li class="pricing-feature pricing-feature--yes">Accès illimité à la salle</li>
+              <li class="pricing-feature pricing-feature--yes">Tous les cours collectifs</li>
+              <li class="pricing-feature pricing-feature--yes">Vestiaires et casier</li>
+              <li class="pricing-feature pricing-feature--yes">Bilan de forme initial</li>
+              <li class="pricing-feature pricing-feature--no">Programme personnalisé</li>
+              <li class="pricing-feature pricing-feature--no">Suivi nutritionnel</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost-red btn--full">Commencer</a>
+          </article>
+
+          <article class="pricing-card pricing-card--featured reveal-item" aria-labelledby="plan-trimestriel">
+            <div class="pricing-badge-featured">Le plus choisi</div>
+            <div class="pricing-card-header">
+              <div class="pricing-badge">Populaire</div>
+              <h3 class="pricing-name" id="plan-trimestriel">Trimestriel</h3>
+              <div class="pricing-price">
+                <span class="pricing-amount">99</span>
+                <span class="pricing-currency">€</span>
+                <span class="pricing-period">/3 mois</span>
+              </div>
+              <p class="pricing-desc">Soit 33€/mois. Économisez 18€ sur le mensuel.</p>
+            </div>
+            <ul class="pricing-features" role="list">
+              <li class="pricing-feature pricing-feature--yes">Accès illimité à la salle</li>
+              <li class="pricing-feature pricing-feature--yes">Tous les cours collectifs</li>
+              <li class="pricing-feature pricing-feature--yes">Vestiaires et casier personnel</li>
+              <li class="pricing-feature pricing-feature--yes">Bilan de forme initial</li>
+              <li class="pricing-feature pricing-feature--yes">Programme personnalisé</li>
+              <li class="pricing-feature pricing-feature--no">Suivi nutritionnel</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary btn--full">Commencer</a>
+          </article>
+
+          <article class="pricing-card reveal-item" aria-labelledby="plan-annuel">
+            <div class="pricing-card-header">
+              <div class="pricing-badge">Meilleur prix</div>
+              <h3 class="pricing-name" id="plan-annuel">Annuel</h3>
+              <div class="pricing-price">
+                <span class="pricing-amount">149</span>
+                <span class="pricing-currency">€</span>
+                <span class="pricing-period">/an</span>
+              </div>
+              <p class="pricing-desc">Soit 12,40€/mois. Notre offre la plus engagée.</p>
+            </div>
+            <ul class="pricing-features" role="list">
+              <li class="pricing-feature pricing-feature--yes">Accès illimité à la salle</li>
+              <li class="pricing-feature pricing-feature--yes">Tous les cours collectifs</li>
+              <li class="pricing-feature pricing-feature--yes">Vestiaires et casier à l'année</li>
+              <li class="pricing-feature pricing-feature--yes">Bilan de forme semestriel</li>
+              <li class="pricing-feature pricing-feature--yes">Programme personnalisé</li>
+              <li class="pricing-feature pricing-feature--yes">Suivi nutritionnel de base</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost-red btn--full">Commencer</a>
+          </article>
+
+        </div>
+
+        <div class="pricing-trial reveal-item">
+          <div class="pricing-trial-inner">
+            <div class="pricing-trial-text">
+              <strong>Pas encore convaincu ?</strong> Essayez la salle gratuitement pendant 7 jours, sans carte bancaire, sans engagement.
+            </div>
+            <a href="#contact" class="btn btn--primary">Essai gratuit 7 jours</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 7 — TEMOIGNAGES -->
+    <!-- ============================================================ -->
+    <section id="temoignages" class="section section--charcoal" aria-labelledby="temoignages-title">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <div class="section-tag">Avis membres</div>
+          <h2 class="section-title" id="temoignages-title">Ce qu'ils en disent.</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <blockquote class="testimonial-card reveal-item">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar testimonial-avatar--a" aria-hidden="true">
+                <span>PL</span>
+              </div>
+              <div class="testimonial-meta">
+                <cite class="testimonial-name">Pierre L.</cite>
+                <span class="testimonial-since">Membre depuis 3 ans</span>
+              </div>
+              <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+            </div>
+            <p class="testimonial-text">"J'ai testé 4 salles à Lyon avant Iron District. C'est la seule où les coaches connaissent mon prénom depuis la première semaine et où personne ne m'a jamais regardé de haut parce que je ne soulève pas 150 kilos. Atmosphère unique."</p>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal-item">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar testimonial-avatar--b" aria-hidden="true">
+                <span>AM</span>
+              </div>
+              <div class="testimonial-meta">
+                <cite class="testimonial-name">Amira M.</cite>
+                <span class="testimonial-since">Membre depuis 18 mois</span>
+              </div>
+              <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+            </div>
+            <p class="testimonial-text">"Les cours de boxe avec Karim ont complètement changé ma relation au sport. Je n'avais jamais fait de sport de ma vie et j'y suis maintenant 4 fois par semaine. Je me suis inscrite pour perdre du poids, je reste pour la communauté."</p>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal-item">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar testimonial-avatar--c" aria-hidden="true">
+                <span>TR</span>
+              </div>
+              <div class="testimonial-meta">
+                <cite class="testimonial-name">Thomas R.</cite>
+                <span class="testimonial-since">Membre depuis 5 ans</span>
+              </div>
+              <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+            </div>
+            <p class="testimonial-text">"Le rapport qualité-prix est imbattable pour Lyon. Pour 33€/mois en trimestriel, j'ai accès à des équipements en meilleur état que des salles franchisées à 50€. Et les cours collectifs sont inclus. C'est rare."</p>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal-item">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar testimonial-avatar--d" aria-hidden="true">
+                <span>CB</span>
+              </div>
+              <div class="testimonial-meta">
+                <cite class="testimonial-name">Chloé B.</cite>
+                <span class="testimonial-since">Membre depuis 8 mois</span>
+              </div>
+              <div class="testimonial-stars" aria-label="4 étoiles sur 5">
+                <span aria-hidden="true">★★★★☆</span>
+              </div>
+            </div>
+            <p class="testimonial-text">"Les séances de yoga avec Sofia le matin sont exactement ce dont j'avais besoin pour équilibrer mon travail de bureau. La salle est calme le matin, bien ventilée, et il n'y a jamais d'attente aux machines. Je recommande sans hésiter."</p>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 8 — CONTACT (footer) -->
+  <!-- ============================================================ -->
+  <footer id="contact" class="site-footer" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <div class="section-tag">Contact</div>
+        <h2 class="section-title" id="contact-title">On vous attend.</h2>
+        <div class="section-divider" aria-hidden="true"></div>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal-item">
+          <address class="contact-address">
+            <div class="contact-info-block">
+              <h3 class="contact-info-title">Adresse</h3>
+              <p>Iron District<br />
+              42 Rue Garibaldi<br />
+              69003 Lyon</p>
+            </div>
+            <div class="contact-info-block">
+              <h3 class="contact-info-title">Contact direct</h3>
+              <p>
+                <a href="tel:+33478123456" class="contact-link">04 78 12 34 56</a><br />
+                <a href="mailto:contact@irondistrict.fr" class="contact-link">contact@irondistrict.fr</a>
+              </p>
+            </div>
+          </address>
+
+          <div class="contact-hours">
+            <h3 class="contact-info-title">Horaires d'ouverture</h3>
+            <table class="hours-table" aria-label="Horaires de la salle">
+              <tbody>
+                <tr>
+                  <th scope="row">Lundi – Vendredi</th>
+                  <td>6h30 – 22h00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Samedi</th>
+                  <td>8h00 – 20h00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Dimanche</th>
+                  <td>9h00 – 17h00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Jours fériés</th>
+                  <td>10h00 – 14h00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-item">
+          <h3 class="contact-form-title">Envoyer un message</h3>
+          <form class="contact-form" action="#" method="post" novalidate aria-label="Formulaire de contact">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nom" class="form-label">Nom complet</label>
+                <input type="text" id="nom" name="nom" class="form-input" placeholder="Jean Dupont" autocomplete="name" required aria-required="true" />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="jean@exemple.fr" autocomplete="email" required aria-required="true" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="objet" class="form-label">Objet</label>
+              <select id="objet" name="objet" class="form-input form-select" required aria-required="true">
+                <option value="">Choisir un objet</option>
+                <option value="essai">Essai gratuit 7 jours</option>
+                <option value="abonnement">Renseignements abonnement</option>
+                <option value="cours">Renseignements cours</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-input form-textarea" rows="5" placeholder="Votre message..." required aria-required="true"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Envoyer le message</button>
+          </form>
+        </div>
+
+        <div class="contact-map reveal-item" aria-label="Localisation Iron District">
+          <div class="map-placeholder" role="img" aria-label="Carte : 42 Rue Garibaldi, Lyon 3e">
+            <div class="map-placeholder-inner">
+              <div class="map-pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+              </div>
+              <p class="map-placeholder-text">42 Rue Garibaldi<br />Lyon 3e</p>
+              <p class="map-placeholder-sub">Métro D — Saxe-Gambetta</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-logo" aria-label="Iron District">
+          <span class="nav-logo-text">IRON</span>
+          <span class="nav-logo-accent">DISTRICT</span>
+        </div>
+        <p class="footer-tagline">Forge ton propre acier.</p>
+        <p class="footer-legal">© 2024 Iron District — Salle de sport Lyon 3e. Site de démonstration portfolio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

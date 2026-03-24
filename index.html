@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Thomas Rayon — Ingénieur Full-Stack, DevOps & IA</title>
+  <meta name="description" content="Thomas Rayon — je construis des systèmes complets, de l'infra Linux à l'interface. DevOps, IA, UX, backend. Créateur de multigpt.app." />
+  <meta name="author" content="Thomas Rayon" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#cc0000" />
+  <link rel="canonical" href="https://thomas-rayon.dev/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Thomas Rayon — Ingénieur Full-Stack, DevOps & IA" />
+  <meta property="og:description" content="Je construis des systèmes complets, de l'infra Linux à l'interface. DevOps, IA, UX, backend. Créateur de multigpt.app." />
+  <meta property="og:url" content="https://thomas-rayon.dev/" />
+  <meta property="og:image" content="https://thomas-rayon.dev/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="profile:first_name" content="Thomas" />
+  <meta property="profile:last_name" content="Rayon" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Thomas Rayon — Ingénieur Full-Stack, DevOps & IA" />
+  <meta name="twitter:description" content="Je construis des systèmes complets, de l'infra Linux à l'interface. DevOps, IA, UX, backend." />
+  <meta name="twitter:image" content="https://thomas-rayon.dev/assets/og-image.jpg" />
+
+  <!-- Structured Data — Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Thomas Rayon",
+    "url": "https://thomas-rayon.dev",
+    "image": "https://thomas-rayon.dev/assets/photos.jpg",
+    "jobTitle": "Ingénieur Full-Stack & IA",
+    "description": "Ingénieur généraliste spécialisé DevOps, IA et systèmes Linux. Créateur de multigpt.app.",
+    "email": "thomas.rayon.pro@gmail.com",
+    "telephone": "+33784302739",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Auch",
+      "addressCountry": "FR"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/thomas-rayon-6a90001b5/",
+      "https://github.com/ThmsRyn",
+      "https://multigpt.app"
+    ],
+    "knowsAbout": [
+      "DevOps", "Linux", "NixOS", "Docker", "Kubernetes",
+      "Intelligence Artificielle", "LLM", "RAG", "Node.js",
+      "PostgreSQL", "UX Design", "Ergonomie cognitive"
+    ],
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Université Côte d'Azur"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Preload photo hero pour LCP -->
+  <link rel="preload" as="image" href="assets/photos.jpg" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <span class="nav-logo" aria-hidden="true">TR</span>
+      <ul class="nav-links" role="list">
+        <li><a href="#about"    data-fr="Qui je suis"    data-en="About">Qui je suis</a></li>
+        <li><a href="#skills"   data-fr="Ma stack"       data-en="My stack">Ma stack</a></li>
+        <li><a href="#xp"       data-fr="Mon parcours"   data-en="Journey">Mon parcours</a></li>
+        <li><a href="#projects" data-fr="Ce que je construis" data-en="Projects">Ce que je construis</a></li>
+        <li><a href="#edu"      data-fr="Formation"      data-en="Education">Formation</a></li>
+        <li><a href="#contact"  data-fr="Travaillons ensemble" data-en="Let's talk">Travaillons ensemble</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="lang-toggle" aria-label="Passer en anglais">
+          <span class="lang-flag" aria-hidden="true">🇬🇧</span>
+        </button>
+        <button class="nav-burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-link-list">&#9776;</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-content">
+      <div class="hero-left">
+        <p class="hero-pre mono" data-fr="Bonjour, je suis" data-en="Hello, I'm">Bonjour, je suis</p>
+        <h1 data-text="Thomas Rayon">Thomas Rayon</h1>
+        <h2 data-fr="Je construis des systèmes complets — de l'infra à l'interface." data-en="I build complete systems — from infrastructure to interface.">Je construis des systèmes complets — de l'infra à l'interface.</h2>
+        <p class="hero-sub mono" data-fr="DevOps · Linux · IA · Cloud · Frontend · Backend · UX" data-en="DevOps · Linux · AI · Cloud · Frontend · Backend · UX">DevOps · Linux · IA · Cloud · Frontend · Backend · UX</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary" data-fr="Travaillons ensemble" data-en="Let's work together">Travaillons ensemble</a>
+          <a href="CV Thomas RAYON.pdf" download class="btn btn-outline" data-fr="Télécharger le CV" data-en="Download Resume">Télécharger le CV</a>
+          <a href="https://www.linkedin.com/in/thomas-rayon-6a90001b5/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+          <a href="https://github.com/ThmsRyn" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+      <div class="hero-right" aria-hidden="true">
+        <img src="assets/photos.jpg" alt="" class="hero-photo" width="800" height="1067" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title fade-in" data-fr="Qui je suis" data-en="About">Qui je suis</h2>
+      <div class="about-grid fade-in">
+        <div class="about-text">
+          <p data-fr="Je construis des systèmes complets — de l'infrastructure Linux à l'interface utilisateur. Pas parce que j'y suis obligé, mais parce que je refuse de séparer l'infra de l'expérience. Un système mal conçu se voit à l'écran. Une interface mal pensée révèle un backend bancal." data-en="I build complete systems — from Linux infrastructure to user interface. Not because I have to, but because I refuse to separate infra from experience. A poorly designed system shows on screen. A poorly thought-out interface reveals a shaky backend.">
+            Je construis des systèmes complets — de l'infrastructure Linux à l'interface utilisateur. Pas parce que j'y suis obligé, mais parce que je refuse de séparer l'infra de l'expérience. Un système mal conçu se voit à l'écran. Une interface mal pensée révèle un backend bancal.
+          </p>
+          <p data-fr="multigpt.app, c'est moi seul : architecture, backend Node.js, PostgreSQL, auth, paiement Stripe, 32 modèles IA de 13 providers, monitoring Prometheus/Grafana, WAF, secrets OpenBao. Zéro équipe. En production." data-en="multigpt.app is me alone: architecture, Node.js backend, PostgreSQL, auth, Stripe payments, 32 AI models from 13 providers, Prometheus/Grafana monitoring, WAF, OpenBao secrets. Zero team. In production.">
+            multigpt.app, c'est moi seul : architecture, backend Node.js, PostgreSQL, auth, paiement Stripe, 32 modèles IA de 13 providers, monitoring Prometheus/Grafana, WAF, secrets OpenBao. Zéro équipe. En production.
+          </p>
+          <p data-fr="Je suis autiste (TSA, reconnu RQTH). Ma pensée systémique, ma concentration sur les problèmes complexes et ma logique analytique ne sont pas des compensations — ce sont des atouts directs dans ce métier." data-en="I'm autistic (ASD, RQTH recognized). My systemic thinking, sustained focus on complex problems, and analytical logic aren't compensations — they're direct assets in this field.">
+            Je suis autiste (TSA, reconnu RQTH). Ma pensée systémique, ma concentration sur les problèmes complexes et ma logique analytique ne sont pas des compensations — ce sont des atouts directs dans ce métier.
+          </p>
+          <div class="about-meta">
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-fr="Auch, France · mobilité OK · Permis B" data-en="Auch, France · open to relocation · Driver's license">Auch, France · mobilité OK · Permis B</span>
+            </span>
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="m22 3-10 9L2 3"/></svg>
+              <a href="mailto:thomas.rayon.pro@gmail.com">thomas.rayon.pro@gmail.com</a>
+            </span>
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.11 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+33784302739">07 84 30 27 39</a>
+            </span>
+          </div>
+        </div>
+        <div class="rqth-card fade-in">
+          <div class="rqth-icon" aria-hidden="true">&#9764;</div>
+          <p class="rqth-label mono" data-fr="Reconnu RQTH · TSA" data-en="RQTH recognized · ASD">Reconnu RQTH · TSA</p>
+          <p class="rqth-desc" data-fr="Pensée systémique, concentration intense sur les problèmes complexes, logique analytique — trois forces qui font la différence sur des systèmes difficiles." data-en="Systemic thinking, intense focus on complex problems, analytical logic — three strengths that matter on hard systems.">
+            Pensée systémique, concentration intense sur les problèmes complexes, logique analytique — trois forces qui font la différence sur des systèmes difficiles.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="alt-bg">
+    <div class="container">
+      <h2 class="section-title fade-in" data-fr="Ma stack" data-en="My stack">Ma stack</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group fade-in">
+          <h3 class="skill-group-title" data-fr="Infrastructure &amp; Systèmes" data-en="Infrastructure &amp; Systems">Infrastructure &amp; Systèmes</h3>
+          <div class="tags">
+            <span class="tag">Linux (Debian, Ubuntu, RHEL)</span>
+            <span class="tag">Windows Server</span>
+            <span class="tag">Active Directory</span>
+            <span class="tag">GPO / DNS / DHCP</span>
+            <span class="tag">Hyper-V</span>
+            <span class="tag">VMware</span>
+            <span class="tag">Proxmox</span>
+            <span class="tag">SSH</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <h3 class="skill-group-title" data-fr="DevOps &amp; Production" data-en="DevOps &amp; Production">DevOps &amp; Production</h3>
+          <div class="tags">
+            <span class="tag">Docker</span>
+            <span class="tag">Podman</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">Prometheus</span>
+            <span class="tag">Grafana</span>
+            <span class="tag">OpenBao</span>
+            <span class="tag">ModSecurity (WAF)</span>
+            <span class="tag">Redis</span>
+            <span class="tag">GLPI / ITIL</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <h3 class="skill-group-title" data-fr="Cloud" data-en="Cloud">Cloud</h3>
+          <div class="tags">
+            <span class="tag">Azure</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Google Cloud</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <h3 class="skill-group-title" data-fr="Backend &amp; Bases de données" data-en="Backend &amp; Databases">Backend &amp; Bases de données</h3>
+          <div class="tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">API REST</span>
+            <span class="tag">Scripting</span>
+            <span class="tag">Automatisation</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <h3 class="skill-group-title" data-fr="Frontend &amp; UX" data-en="Frontend &amp; UX">Frontend &amp; UX</h3>
+          <div class="tags">
+            <span class="tag">HTML / CSS / JS</span>
+            <span class="tag">Responsive Design</span>
+            <span class="tag">Design System</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Prototypage interactif</span>
+            <span class="tag">Wireframes Low-fi / High-fi</span>
+            <span class="tag">UX Research</span>
+            <span class="tag">Tests utilisateurs</span>
+            <span class="tag">User Journey Mapping</span>
+            <span class="tag">Personas</span>
+            <span class="tag">Ergonomie cognitive</span>
+            <span class="tag">Design Thinking</span>
+            <span class="tag">Atomic Design</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <h3 class="skill-group-title" data-fr="Outils créatifs" data-en="Creative tools">Outils créatifs</h3>
+          <div class="tags">
+            <span class="tag">Adobe Photoshop</span>
+            <span class="tag">Adobe Illustrator</span>
+            <span class="tag">Adobe InDesign</span>
+            <span class="tag">After Effects</span>
+            <span class="tag">Premiere Pro</span>
+            <span class="tag">Canva</span>
+            <span class="tag">Blender</span>
+            <span class="tag">Inkscape</span>
+            <span class="tag">GIMP</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <h3 class="skill-group-title" data-fr="Gestion &amp; Collaboration" data-en="Management &amp; Collaboration">Gestion &amp; Collaboration</h3>
+          <div class="tags">
+            <span class="tag">Agile / Scrum / Kanban</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Notion</span>
+            <span class="tag">Jira</span>
+            <span class="tag">Trello</span>
+            <span class="tag">Slack</span>
+            <span class="tag">Qualtrics</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Google Analytics</span>
+            <span class="tag">WordPress</span>
+            <span class="tag">Instories</span>
+            <span class="tag">Capcut</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <h3 class="skill-group-title" data-fr="IA &amp; Machine Learning" data-en="AI &amp; Machine Learning">IA &amp; Machine Learning</h3>
+          <div class="tags">
+            <span class="tag">LLM (Mistral, GPT, Claude)</span>
+            <span class="tag">Stable Diffusion</span>
+            <span class="tag">RAG</span>
+            <span class="tag">Fine-tuning</span>
+            <span class="tag">Agents IA</span>
+            <span class="tag">Déploiement local</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <h3 class="skill-group-title" data-fr="Réseaux &amp; Sécurité" data-en="Networks &amp; Security">Réseaux &amp; Sécurité</h3>
+          <div class="tags">
+            <span class="tag">IPv4 / VLAN</span>
+            <span class="tag">Pare-feu / VPN</span>
+            <span class="tag">Proxy</span>
+            <span class="tag">Wireshark</span>
+            <span class="tag">ANSSI</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <h3 class="skill-group-title" data-fr="Langues" data-en="Languages">Langues</h3>
+          <div class="tags">
+            <span class="tag tag-lang">Français — natif</span>
+            <span class="tag tag-lang">Anglais — B2</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="xp">
+    <div class="container">
+      <h2 class="section-title fade-in" data-fr="Mon parcours" data-en="Journey">Mon parcours</h2>
+      <div class="timeline">
+
+        <div class="tl-item fade-in-left">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date mono">11/2025 — 12/2025</span>
+            <h3 class="tl-title" data-fr="Stagiaire systèmes &amp; réseaux" data-en="Systems &amp; Networks Intern">Stagiaire systèmes &amp; réseaux</h3>
+            <span class="tl-company">Mango Technologies</span>
+            <ul class="tl-list">
+              <li data-fr="Déploiement OS (Windows 11, Linux), migration et configuration initiale des postes clients." data-en="OS deployment (Windows 11, Linux), migration and initial client machine configuration.">Déploiement OS (Windows 11, Linux), migration et configuration initiale des postes clients.</li>
+              <li data-fr="Installation de serveurs Windows et Linux : Active Directory, DHCP/DNS, VLAN." data-en="Windows and Linux server installation: Active Directory, DHCP/DNS, VLAN.">Installation de serveurs Windows et Linux : Active Directory, DHCP/DNS, VLAN.</li>
+              <li data-fr="Administration de domaine : comptes, groupes, GPO. Supervision et maintenance préventive." data-en="Domain administration: accounts, groups, GPO. Supervision and preventive maintenance.">Administration de domaine : comptes, groupes, GPO. Supervision et maintenance préventive.</li>
+              <li data-fr="Conseil clients sur la sécurité, les sauvegardes et les bonnes pratiques." data-en="Client advisory on security, backups, and best practices.">Conseil clients sur la sécurité, les sauvegardes et les bonnes pratiques.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in-left">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date mono">2024 — 2025</span>
+            <h3 class="tl-title" data-fr="Chef de projet digital" data-en="Digital Project Manager">Chef de projet digital</h3>
+            <span class="tl-company">CyberKofi</span>
+            <ul class="tl-list">
+              <li data-fr="Supervision de la refonte du site web, intégrant un espace bénévole interactif — UX, optimisation SEO et performances." data-en="Oversaw website redesign including an interactive volunteer space — UX, SEO optimisation and performance.">Supervision de la refonte du site web, intégrant un espace bénévole interactif — UX, optimisation SEO et performances.</li>
+              <li data-fr="Développement web et prototypage via Figma : maquettes, parcours utilisateurs, intégration front." data-en="Web development and prototyping in Figma: mockups, user flows, front-end integration.">Développement web et prototypage via Figma : maquettes, parcours utilisateurs, intégration front.</li>
+              <li data-fr="Coordination d'une équipe pluridisciplinaire (designers, développeurs, marketing) en Agile/Scrum — délais et objectifs tenus." data-en="Coordinated a cross-functional team (designers, developers, marketing) in Agile/Scrum — deadlines and objectives met.">Coordination d'une équipe pluridisciplinaire (designers, développeurs, marketing) en Agile/Scrum — délais et objectifs tenus.</li>
+              <li data-fr="Community management sur les réseaux sociaux du projet." data-en="Social media community management for the project.">Community management sur les réseaux sociaux du projet.</li>
+              <li data-fr="Mise en place et suivi des KPIs (Google Analytics, Power BI) : +30 % d'engagement utilisateur mesuré." data-en="KPI setup and tracking (Google Analytics, Power BI): +30% measured user engagement.">Mise en place et suivi des KPIs (Google Analytics, Power BI) : +30 % d'engagement utilisateur mesuré.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in-left">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date mono">Octobre 2021 — Présent</span>
+            <h3 class="tl-title" data-fr="UX Designer" data-en="UX Designer">UX Designer</h3>
+            <span class="tl-company">Eiko</span>
+            <ul class="tl-list">
+              <li data-fr="Conception UX/UI d'applications mobiles en Design Thinking et User-Centered Design — de la recherche utilisateur à la livraison finale." data-en="UX/UI design for mobile apps using Design Thinking and User-Centered Design — from user research to final delivery.">Conception UX/UI d'applications mobiles en Design Thinking et User-Centered Design — de la recherche utilisateur à la livraison finale.</li>
+              <li data-fr="Analyses heuristiques, création de personas, User Journey Mapping et architecture de l'information — méthodes appliquées sur des projets de refonte complexes." data-en="Heuristic analysis, persona creation, User Journey Mapping and information architecture — methods applied to complex redesign projects.">Analyses heuristiques, création de personas, User Journey Mapping et architecture de l'information — méthodes appliquées sur des projets de refonte complexes.</li>
+              <li data-fr="Prototypage Figma : wireframes Low-fi et High-fi, parcours utilisateurs détaillés, conception responsive selon les principes Atomic Design." data-en="Figma prototyping: Low-fi and High-fi wireframes, detailed user flows, responsive design following Atomic Design principles.">Prototypage Figma : wireframes Low-fi et High-fi, parcours utilisateurs détaillés, conception responsive selon les principes Atomic Design.</li>
+              <li data-fr="Recherche utilisateur active : tests utilisateurs, collecte et analyse de retours qualitatifs et quantitatifs pour guider les décisions de design." data-en="Active user research: user testing, qualitative and quantitative feedback collection and analysis to drive design decisions.">Recherche utilisateur active : tests utilisateurs, collecte et analyse de retours qualitatifs et quantitatifs pour guider les décisions de design.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in-left">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date mono">Mars 2022 — Septembre 2023</span>
+            <h3 class="tl-title" data-fr="UX Designer / Chargé de projet" data-en="UX Designer / Project Lead">UX Designer / Chargé de projet</h3>
+            <span class="tl-company">Laboratoire LESCOT — IFSTTAR</span>
+            <ul class="tl-list">
+              <li data-fr="Pilotage de projets digitaux en mobilité (Agile/Scrum) : plannings, KPIs, cahiers des charges et spécifications fonctionnelles livrés dans les délais." data-en="Led digital mobility projects (Agile/Scrum): schedules, KPIs, specifications and functional requirements delivered on time.">Pilotage de projets digitaux en mobilité (Agile/Scrum) : plannings, KPIs, cahiers des charges et spécifications fonctionnelles livrés dans les délais.</li>
+              <li data-fr="Conception et conduite des tests utilisateurs — analyses quantitatives et qualitatives exploitées pour orienter les décisions produit." data-en="Designed and ran user testing sessions — quantitative and qualitative analysis used to drive product decisions.">Conception et conduite des tests utilisateurs — analyses quantitatives et qualitatives exploitées pour orienter les décisions produit.</li>
+              <li data-fr="Refonte UX complète du projet : +80 % d'engagement public mesuré. Wireframes Figma, parcours utilisateurs détaillés, tests itératifs." data-en="Full UX redesign of the project: +80% measured public engagement. Figma wireframes, detailed user flows, iterative testing.">Refonte UX complète du projet : +80 % d'engagement public mesuré. Wireframes Figma, parcours utilisateurs détaillés, tests itératifs.</li>
+              <li data-fr="Gestion des réseaux sociaux du laboratoire : community management, création graphique (Photoshop, Illustrator, After Effects)." data-en="Lab social media management: community management, graphic creation (Photoshop, Illustrator, After Effects).">Gestion des réseaux sociaux du laboratoire : community management, création graphique (Photoshop, Illustrator, After Effects).</li>
+              <li data-fr="Reporting et suivi de performance via Qualtrics et Power BI — recommandations concrètes présentées aux décideurs." data-en="Performance tracking via Qualtrics and Power BI — concrete recommendations presented to decision-makers.">Reporting et suivi de performance via Qualtrics et Power BI — recommandations concrètes présentées aux décideurs.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in-left">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date mono" data-fr="En continu" data-en="Ongoing">En continu</span>
+            <h3 class="tl-title" data-fr="Fondateur &amp; opérateur — multigpt.app" data-en="Founder &amp; Operator — multigpt.app">Fondateur &amp; opérateur — multigpt.app</h3>
+            <span class="tl-company">multigpt.app</span>
+            <ul class="tl-list">
+              <li data-fr="J'ai conçu et mis en production un SaaS d'agrégation de modèles IA — seul, de l'architecture au monitoring." data-en="Designed and deployed an AI model aggregation SaaS — alone, from architecture to monitoring.">J'ai conçu et mis en production un SaaS d'agrégation de modèles IA — seul, de l'architecture au monitoring.</li>
+              <li data-fr="Stack : Node.js, PostgreSQL, Nginx, Prometheus/Grafana, OpenBao, ModSecurity WAF, Redis." data-en="Stack: Node.js, PostgreSQL, Nginx, Prometheus/Grafana, OpenBao, ModSecurity WAF, Redis.">Stack : Node.js, PostgreSQL, Nginx, Prometheus/Grafana, OpenBao, ModSecurity WAF, Redis.</li>
+              <li data-fr="Responsable de bout en bout : infra, sécurité, CI/CD, backups, observabilité." data-en="End-to-end ownership: infra, security, CI/CD, backups, observability.">Responsable de bout en bout : infra, sécurité, CI/CD, backups, observabilité.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="alt-bg">
+    <div class="container">
+      <h2 class="section-title fade-in" data-fr="Ce que je construis" data-en="Projects">Ce que je construis</h2>
+      <div class="projects-grid">
+
+        <!-- multigpt.app — card showcase -->
+        <article class="project-card project-card--multigpt featured fade-in">
+          <div class="project-header">
+            <span class="project-badge mono" data-fr="En production" data-en="Live">En production</span>
+            <div class="project-links">
+              <a href="https://multigpt.app" target="_blank" rel="noopener" class="project-link" aria-label="Ouvrir multigpt.app">&#8599;</a>
+            </div>
+          </div>
+          <div class="mgpt-preview">
+            <img src="assets/multigpt-preview.jpg" alt="Aperçu de l'interface multigpt.app" class="mgpt-preview-img" />
+          </div>
+          <p class="project-desc" data-fr="J'ai conçu et développé la plateforme de A à Z : backend Node.js/Express, PostgreSQL, auth JWT, Stripe, frontend 12 pages, système de crédits unifié. Architecture sécurisée — WAF, rate-limiting, gestion des secrets. 32 modèles IA de 13 providers intégrés." data-en="I designed and built the platform from scratch: Node.js/Express backend, PostgreSQL, JWT auth, Stripe, 12-page frontend, unified credit system. Secure architecture — WAF, rate-limiting, secrets management. 32 AI models from 13 providers integrated.">
+            J'ai conçu et développé la plateforme de A à Z : backend Node.js/Express, PostgreSQL, auth JWT, Stripe, frontend 12 pages, système de crédits unifié. Architecture sécurisée — WAF, rate-limiting, gestion des secrets. 32 modèles IA de 13 providers intégrés.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Prometheus</span>
+            <span class="tag">OpenBao</span>
+            <span class="tag">WAF</span>
+          </div>
+        </article>
+
+        <!-- Templates & Sites -->
+        <article class="project-card project-card--templates fade-in">
+          <div class="project-header">
+            <span class="project-badge mono" data-fr="Maquettes web" data-en="Web mockups">Maquettes web</span>
+            <div class="project-links">
+              <a href="https://github.com/ThmsRyn" target="_blank" rel="noopener" class="project-link" aria-label="Voir sur GitHub">&#8599;</a>
+            </div>
+          </div>
+          <h3 class="project-title" data-fr="Templates &amp; Sites" data-en="Templates &amp; Sites">Templates &amp; Sites</h3>
+          <p class="project-desc" data-fr="Je conçois et développe des pages web sur mesure pour tout type de client — commerce local, restaurant, salle de sport, SaaS. Voici quatre exemples fictifs réalisés pour illustrer ce que je sais produire : HTML/CSS/JS vanilla, responsive, accessibles, zéro framework." data-en="I design and build custom web pages for any type of client — local business, restaurant, gym, SaaS. Here are four fictional examples I built to showcase what I can deliver: vanilla HTML/CSS/JS, responsive, accessible, zero framework.">
+            Je conçois et développe des pages web sur mesure pour tout type de client — commerce local, restaurant, salle de sport, SaaS. Voici quatre exemples fictifs réalisés pour illustrer ce que je sais produire : HTML/CSS/JS vanilla, responsive, accessibles, zéro framework.
+          </p>
+          <div class="templates-gallery">
+
+            <a href="portfolioexemple/coiffure/index.html" target="_blank" rel="noopener" class="tpl-card">
+              <div class="tpl-preview tpl-preview--img">
+                <img src="portfolioexemple/atelier_mane.jpg" alt="Atelier Mane — Salon de coiffure" loading="lazy" />
+                <div class="tpl-overlay">
+                  <span class="tpl-logo">Atelier Mane</span>
+                  <span class="tpl-sub">Salon de coiffure</span>
+                </div>
+              </div>
+              <div class="tpl-footer">
+                <span class="tpl-type mono" data-fr="Artisanat / Local" data-en="Craft / Local">Artisanat / Local</span>
+                <span class="tpl-open" aria-hidden="true">&#8599;</span>
+              </div>
+            </a>
+
+            <a href="portfolioexemple/salle-sport/index.html" target="_blank" rel="noopener" class="tpl-card">
+              <div class="tpl-preview tpl-preview--img">
+                <img src="portfolioexemple/iron_district.jpg" alt="Iron District — Salle de sport" loading="lazy" />
+                <div class="tpl-overlay">
+                  <span class="tpl-logo">IRON DISTRICT</span>
+                  <span class="tpl-sub">Salle de sport</span>
+                </div>
+              </div>
+              <div class="tpl-footer">
+                <span class="tpl-type mono" data-fr="Sport / Énergie" data-en="Sport / Energy">Sport / Énergie</span>
+                <span class="tpl-open" aria-hidden="true">&#8599;</span>
+              </div>
+            </a>
+
+            <a href="portfolioexemple/restaurant-japonais/index.html" target="_blank" rel="noopener" class="tpl-card">
+              <div class="tpl-preview tpl-preview--img">
+                <img src="portfolioexemple/umami_protocol.jpg" alt="Umami Protocol — Restaurant gastronomique" loading="lazy" />
+                <div class="tpl-overlay">
+                  <span class="tpl-logo">旨 Umami Protocol</span>
+                  <span class="tpl-sub">Restaurant gastronomique</span>
+                </div>
+              </div>
+              <div class="tpl-footer">
+                <span class="tpl-type mono" data-fr="Gastronomie / Premium" data-en="Fine dining / Premium">Gastronomie / Premium</span>
+                <span class="tpl-open" aria-hidden="true">&#8599;</span>
+              </div>
+            </a>
+
+            <a href="portfolioexemple/saas/index.html" target="_blank" rel="noopener" class="tpl-card">
+              <div class="tpl-preview tpl-preview--img">
+                <img src="portfolioexemple/flowsync.jpg" alt="Flowsync — SaaS gestion de projets" loading="lazy" />
+                <div class="tpl-overlay">
+                  <span class="tpl-logo">Flowsync</span>
+                  <span class="tpl-sub">SaaS — Gestion de projets</span>
+                </div>
+              </div>
+              <div class="tpl-footer">
+                <span class="tpl-type mono" data-fr="SaaS / Tech" data-en="SaaS / Tech">SaaS / Tech</span>
+                <span class="tpl-open" aria-hidden="true">&#8599;</span>
+              </div>
+            </a>
+
+          </div>
+          <div class="project-tags">
+            <span class="tag">HTML / CSS</span>
+            <span class="tag">JS vanilla</span>
+            <span class="tag">Responsive</span>
+            <span class="tag">Accessible</span>
+            <span class="tag">Design System</span>
+          </div>
+        </article>
+
+        <!-- Aka OS -->
+        <article class="project-card project-card--akaos fade-in">
+          <div class="project-header">
+            <span class="project-badge mono" data-fr="En développement" data-en="In development">En développement</span>
+          </div>
+          <div class="akaos-logo-wrap">
+            <img src="assets/Aka_OS_logo.jpg" alt="Aka OS" class="akaos-logo" />
+          </div>
+          <h3 class="project-title">Aka OS</h3>
+          <p class="project-desc" data-fr="Un OS qui s'adapte à vous — pas l'inverse. Basé sur NixOS : reproductible, déclaratif, souverain. Aka OS apprend vos usages et reconfigure l'environnement en conséquence. Rollback natif, déploiement atomique." data-en="An OS that adapts to you — not the other way around. Built on NixOS: reproducible, declarative, sovereign. Aka OS learns your usage patterns and reconfigures the environment accordingly. Native rollback, atomic deployment.">
+            Un OS qui s'adapte à vous — pas l'inverse. Basé sur NixOS : reproductible, déclaratif, souverain. Aka OS apprend vos usages et reconfigure l'environnement en conséquence. Rollback natif, déploiement atomique.
+          </p>
+          <!-- gallery-grid desactivee en attente des screenshots aka os -->
+          <!--
+          <div class="gallery-grid gallery-grid--screens">
+            <div class="gallery-item gallery-item--screen" aria-hidden="true"><span class="gallery-label mono">Desktop</span></div>
+            <div class="gallery-item gallery-item--screen" aria-hidden="true"><span class="gallery-label mono">Terminal</span></div>
+            <div class="gallery-item gallery-item--screen" aria-hidden="true"><span class="gallery-label mono">Settings</span></div>
+            <div class="gallery-item gallery-item--screen" aria-hidden="true"><span class="gallery-label mono">Overview</span></div>
+          </div>
+          -->
+          <div class="project-links-row">
+            <a href="#" class="btn btn-outline btn-sm" data-fr="GitHub (bientôt)" data-en="GitHub (soon)">GitHub (bientôt)</a>
+            <a href="#" class="btn btn-outline btn-sm" data-fr="Site dédié (bientôt)" data-en="Dedicated site (soon)">Site dédié (bientôt)</a>
+          </div>
+          <div class="project-tags">
+            <span class="tag">NixOS</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Déclaratif</span>
+            <span class="tag">Infrastructure as Code</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="edu">
+    <div class="container">
+      <h2 class="section-title fade-in" data-fr="Formation" data-en="Education">Formation</h2>
+      <div class="edu-list">
+
+        <div class="edu-item fade-in">
+          <div class="edu-meta">
+            <span class="edu-date mono">07/2025 — 02/2026</span>
+            <span class="edu-badge" data-fr="Niv. 5 — RNCP 37682" data-en="Level 5 — RNCP 37682">Niv. 5 — RNCP 37682</span>
+          </div>
+          <h3 class="edu-title" data-fr="TP Technicien Supérieur Systèmes &amp; Réseaux" data-en="Higher Technician in Systems &amp; Networks">TP Technicien Supérieur Systèmes &amp; Réseaux</h3>
+          <span class="edu-school">ADRAR Pôle Numérique — Toulouse</span>
+          <p class="edu-desc" data-fr="Support &amp; ITSM · Windows/Linux · Réseaux IP · Virtualisation · Sécurité · Scripting · Déploiement" data-en="Support &amp; ITSM · Windows/Linux · IP networks · Virtualization · Security · Scripting · Deployment">Support &amp; ITSM · Windows/Linux · Réseaux IP · Virtualisation · Sécurité · Scripting · Déploiement</p>
+        </div>
+
+        <div class="edu-item fade-in">
+          <div class="edu-meta">
+            <span class="edu-date mono">2020 — 2022</span>
+          </div>
+          <h3 class="edu-title" data-fr="Master Ergonomie Cognitive des Technologies Numériques" data-en="MSc Cognitive Ergonomics of Digital Technologies">Master Ergonomie Cognitive des Technologies Numériques</h3>
+          <span class="edu-school" data-fr="Université Côte d'Azur" data-en="University of Côte d'Azur">Université Côte d'Azur</span>
+          <p class="edu-desc" data-fr="Recherche en facteurs humains, conception centrée utilisateur, évaluation d'interfaces et ergonomie des systèmes complexes." data-en="Research in human factors, user-centered design, interface evaluation, and ergonomics of complex systems.">Recherche en facteurs humains, conception centrée utilisateur, évaluation d'interfaces et ergonomie des systèmes complexes.</p>
+        </div>
+
+        <div class="edu-item fade-in">
+          <div class="edu-meta">
+            <span class="edu-date mono">2017 — 2020</span>
+          </div>
+          <h3 class="edu-title" data-fr="Licence Psychologie" data-en="BA Psychology">Licence Psychologie</h3>
+          <span class="edu-school" data-fr="Université Jean Jaurès — Toulouse" data-en="Université Jean Jaurès — Toulouse">Université Jean Jaurès — Toulouse</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="alt-bg">
+    <div class="container contact-container">
+      <h2 class="section-title fade-in" data-fr="Travaillons ensemble" data-en="Let's talk">Travaillons ensemble</h2>
+      <p class="contact-intro fade-in" data-fr="Disponible pour une alternance, un poste ou une collaboration. Une question sur mon parcours, un projet à construire — écrivez." data-en="Available for an apprenticeship, position, or collaboration. A question about my background, a project to build — reach out.">
+        Disponible pour une alternance, un poste ou une collaboration. Une question sur mon parcours, un projet à construire — écrivez.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:thomas.rayon.pro@gmail.com" class="contact-card fade-in">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="m22 3-10 9L2 3"/></svg>
+          <span>thomas.rayon.pro@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/thomas-rayon-6a90001b5/" target="_blank" rel="noopener" class="contact-card fade-in">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="tel:+33784302739" class="contact-card fade-in">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.11 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>07 84 30 27 39</span>
+        </a>
+        <a href="CV Thomas RAYON.pdf" download class="contact-card fade-in">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-fr="Télécharger le CV" data-en="Download Resume">Télécharger le CV</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="mono">Thomas Rayon &copy; 2026</span>
+      <span class="footer-stack mono">HTML · CSS · JS vanilla · GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
